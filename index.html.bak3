@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>美西大環線 6日自駕行程與美食指南 | Summer Odyssey</title>
+  <title>美西大環線 7日自駕行程與美食指南 | Summer Odyssey</title>
   
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,27 +24,18 @@
       <div class="header-logo">
         <i class="fa-solid fa-compass-drafting logo-icon"></i>
         <div>
-          <h1 data-i18n="header_title">Summer Odyssey</h1>
-          <p data-i18n="header_subtitle">美西大環線 6日自駕與美食探索規劃</p>
+          <h1>Summer Odyssey</h1>
+          <p>美西大環線 7日自駕與美食探索規劃</p>
         </div>
       </div>
-      
-      <!-- Language Toggle Actions -->
-      <div class="header-actions">
-        <button id="langToggleBtn" class="lang-toggle-btn" aria-label="切換語言 / Toggle Language">
-          <i class="fa-solid fa-language"></i>
-          <span id="langToggleText">English</span>
-        </button>
-      </div>
-
       <div class="header-stats">
         <div class="stat-badge">
           <i class="fa-solid fa-road"></i>
-          <span data-i18n="stat_miles">約 1,201 英哩</span>
+          <span>約 1,201 英哩</span>
         </div>
         <div class="stat-badge">
           <i class="fa-solid fa-clock"></i>
-          <span data-i18n="stat_hours">累計行車 ~21 小時</span>
+          <span>累計行車 ~21 小時</span>
         </div>
       </div>
     </header>
@@ -55,26 +46,26 @@
       <aside class="sidebar">
         <!-- Family Profile Section -->
         <section class="sidebar-section family-profile">
-          <h2 class="section-title"><i class="fa-solid fa-people-group"></i> <span data-i18n="sidebar_profile_title">家庭成員與背景</span></h2>
+          <h2 class="section-title"><i class="fa-solid fa-people-group"></i> <span>家庭成員與背景</span></h2>
           <div class="profile-list">
             <div class="profile-item">
-              <div class="profile-label" data-i18n="sidebar_profile_size_label">成員規模</div>
-              <div class="profile-value" data-i18n="sidebar_profile_size_val">5 人家庭旅遊</div>
+              <div class="profile-label">成員規模</div>
+              <div class="profile-value">5 人家庭旅遊</div>
             </div>
             <div class="profile-item">
-              <div class="profile-label" data-i18n="sidebar_profile_parents_label">父母背景</div>
-              <div class="profile-value" data-i18n="sidebar_profile_parents_val">夫妻 50 歲 (台裔新移民，定居美國 ~20 年)</div>
+              <div class="profile-label">父母背景</div>
+              <div class="profile-value">夫妻 50 歲 (台裔新移民，定居美國 ~20 年)</div>
             </div>
             <div class="profile-item">
-              <div class="profile-label" data-i18n="sidebar_profile_children_label">孩子成員</div>
-              <div class="profile-value" data-i18n="sidebar_profile_children_val">15 歲三胞胎 (二女一男)</div>
+              <div class="profile-label">孩子成員</div>
+              <div class="profile-value">15 歲三胞胎 (二女一男)</div>
             </div>
           </div>
         </section>
 
         <!-- Day Tabs -->
         <section class="sidebar-section">
-          <h2 class="section-title"><i class="fa-solid fa-calendar-days"></i> <span data-i18n="sidebar_itinerary_title">每日行程規劃</span></h2>
+          <h2 class="section-title"><i class="fa-solid fa-calendar-days"></i> 每日行程規劃</h2>
           <div class="day-tabs" id="dayTabsContainer">
             <!-- Tabs will be rendered here by script.js -->
           </div>
@@ -84,7 +75,7 @@
         <section class="sidebar-section booking-tracker">
           <h2 class="section-title">
             <i class="fa-solid fa-wallet"></i> 
-            <span data-i18n="sidebar_booking_title">訂單預訂進度</span>
+            <span>訂單預訂進度</span>
             <span class="progress-percent" id="bookingProgressText">0%</span>
           </h2>
           <div class="progress-bar-container">
@@ -97,13 +88,13 @@
 
         <!-- Budget Summary -->
         <section class="sidebar-section budget-section">
-          <h2 class="section-title"><i class="fa-solid fa-dollar-sign"></i> <span data-i18n="sidebar_budget_title">預算花費估算</span></h2>
+          <h2 class="section-title"><i class="fa-solid fa-dollar-sign"></i> 預算花費估算</h2>
           <div class="budget-row">
-            <span data-i18n="sidebar_budget_est">預估總計:</span>
+            <span>預估總計:</span>
             <span class="budget-value" id="totalEstimateVal">$0</span>
           </div>
           <div class="budget-row highlight">
-            <span data-i18n="sidebar_budget_act">實付總計:</span>
+            <span>實付總計:</span>
             <span class="budget-value" id="totalActualVal">$0</span>
           </div>
         </section>
@@ -120,9 +111,9 @@
         <!-- Maps and Routes Explorer -->
         <section class="maps-explorer glass-panel">
           <div class="section-header">
-            <h3><i class="fa-solid fa-map-location-dot"></i> <span data-i18n="main_map_title">當日行車路線地圖</span></h3>
-            <a id="mainMapNavLink" href="https://www.google.com/maps/dir/23944+Francisco+Way,+Valencia,+CA/ARIA+Resort+%26+Casino,+Las+Vegas,+NV/Springdale,+UT/Kanab,+UT/Page,+AZ/Grand+Canyon+National+Park/Kingman,+AZ/23944+Francisco+Way,+Valencia,+CA" target="_blank" class="map-btn-link">
-              <i class="fa-solid fa-map"></i> <span data-i18n="main_map_nav_btn">導航：Google Maps 完整路線</span>
+            <h3><i class="fa-solid fa-map-location-dot"></i> 當日行車路線地圖</h3>
+            <a href="https://www.google.com/maps/dir/23944+Francisco+Way,+Valencia,+CA/Las+Vegas,+NV/Springdale,+UT/Kanab,+UT/Page,+AZ/Grand+Canyon+National+Park/Kingman,+AZ/23944+Francisco+Way,+Valencia,+CA" target="_blank" class="map-btn-link">
+              <i class="fa-solid fa-map"></i> 導航：Google Maps 完整路線
             </a>
           </div>
           <div class="map-container">
@@ -130,12 +121,22 @@
           </div>
         </section>
 
+        <!-- Google Maps List Saved Locations -->
+        <section class="saved-locations glass-panel">
+          <div class="section-header">
+            <h3><i class="fa-solid fa-map-pin"></i> Google Maps 自訂清單地點 (2026_07_Summer Trip)</h3>
+            <span class="location-count" id="locationCountText">9 個已匯入地點</span>
+          </div>
+          <div class="locations-grid" id="locationsGrid">
+            <!-- Custom locations rendered by script.js -->
+          </div>
+        </section>
 
         <!-- Interactive Packing List -->
         <section class="packing-list glass-panel">
           <div class="section-header">
-            <h3><i class="fa-solid fa-suitcase"></i> <span data-i18n="main_packing_title">行前與裝備準備清單</span></h3>
-            <span class="packing-count" id="packingCountText">0 / 0 Completed</span>
+            <h3><i class="fa-solid fa-suitcase"></i> 行前與裝備準備清單</h3>
+            <span class="packing-count" id="packingCountText">0 / 0 已完成</span>
           </div>
           <div class="packing-grid" id="packingListGrid">
             <!-- Packing categories and items rendered by script.js -->
@@ -147,6 +148,8 @@
     </div>
 
   </div>
+
+
 
   <!-- Local Script -->
   <script src="script.js"></script>

@@ -1,0 +1,692 @@
+// ==========================================================================
+// 1. Itinerary Data (Day 1 - Day 7)
+// ==========================================================================
+const itineraryData = [
+  {
+    "dayNumber": 1,
+    "dayTitle": "7月5日 (週日) | 洛杉磯 ➔ （中繼休息） ➔ 拉斯維加斯",
+    "drivingRoute": "Los Angeles (23944 Francisco Way) ➔ Las Vegas (JW Marriott)",
+    "drivingStats": "總車程約 4 - 4.5 小時",
+    "googleMapsLink": "https://www.google.com/maps/dir/23944+Francisco+Way,+Valencia,+CA+91354/JW+Marriott+Las+Vegas+Resort+%26+Spa",
+    "googleMapsEmbedUrl": "https://maps.google.com/maps?saddr=23944+Francisco+Way,+Valencia,+CA+91354&daddr=JW+Marriott+Las+Vegas+Resort+%26+Spa&output=embed",
+    "itinerary": {
+      "morning": [
+        { "time": "08:00 - 10:00", "text": "在洛杉磯吃完豐盛早餐後準備出發", "type": "dining", "detail": "吃飽儲備體力以利長途自駕。" },
+        { "time": "10:00 - 12:00", "text": "啟程前往拉斯維加斯", "type": "drive", "detail": "行駛 15 號州際公路。因避開國慶日當天車潮，今日出發行車路況將會非常順暢。" }
+      ],
+      "afternoon": [
+        { "time": "12:00 - 13:00", "text": "於 Barstow 停留並享用 In-N-Out 漢堡", "type": "dining", "detail": "公路自駕經典中繼站。在 Barstow 享用必點的隱藏菜單 Double-Double Animal Style 搭配奶昔，並順便加油與休息。" },
+        { "time": "13:00 - 15:00", "text": "繼續上路前往拉斯維加斯", "type": "drive", "detail": "行駛剩餘車程，約 2 小時抵達拉斯維加斯。" },
+        { "time": "15:00 - 16:00", "text": "抵達拉斯維加斯，前往 Costco 採買物資", "type": "rest", "detail": "抵達後前往當地 Costco 購買保冰桶與冰塊，為接下來的公路旅行備妥隨車冰箱，並採購瓶裝水與零食乾糧 [1, 2]。" },
+        { "time": "16:00 - 18:00", "text": "入住賭城大道附近的 JW Marriott 渡假村並稍作休息", "type": "hotel", "detail": "配合下午 4:00 左右辦理入住。放妥行李並稍微休息，避開大道的擁擠噪音。" }
+      ],
+      "evening": [
+        { "time": "18:00 - 19:30", "text": "前往春山路 (Spring Mountain Road) 亞洲區享用晚餐", "type": "dining", "detail": "推薦：春山路亞洲區的頂級泰國菜 Lotus of Siam、成都Taste，或大獲好評的越南牛肉粉與蒜香花螺 [1, 2]。" },
+        { "time": "20:00 - 22:00", "text": "前往金銀島酒店 (Treasure Island) 觀賞太陽馬戲團經典秀 Mystère", "type": "show", "detail": "將秀排在第一天晚上觀賞，今日體力最充沛，且能釋放 Day 2 前往國家公園的行車時間 [3, 4]。" }
+      ]
+    },
+    "tips": "週日是南加往拉斯維加斯方向路況最好的時間（因大部分遊客在此時回程），建議照原定時程悠閒開車即可。"
+  },
+  {
+    "dayNumber": 2,
+    "dayTitle": "7月6日 (週一) | 拉斯維加斯 ➔ 11:00 退房 ➔ 錫安國家公園（直達免中繼）",
+    "drivingRoute": "JW Marriott Las Vegas ➔ Zion SpringHill Suites",
+    "drivingStats": "車程估計約 2.5 小時",
+    "googleMapsLink": "https://www.google.com/maps/dir/JW+Marriott+Las+Vegas+Resort+%26+Spa/SpringHill+Suites+by+Marriott+Springdale+Zion+National+Park",
+    "googleMapsEmbedUrl": "https://maps.google.com/maps?saddr=JW+Marriott+Las+Vegas+Resort+%26+Spa&daddr=SpringHill+Suites+by+Marriott+Springdale+Zion+National+Park&output=embed",
+    "itinerary": {
+      "morning": [
+        { "time": "08:30 - 10:00", "text": "悠閒起床並享用飯店早餐", "type": "dining" },
+        { "time": "10:00 - 11:00", "text": "整理行李，辦理退房準備出發", "type": "hotel" }
+      ],
+      "afternoon": [
+        { "time": "11:00 - 13:30", "text": "驅車直奔錫安國家公園 (Springdale)", "type": "drive", "detail": "穿過內華達州進入猶他州，車程約 2.5 小時。注意時差：猶他州比內華達州快一小時，抵達時為當地時間下午 14:30 [3]。" },
+        { "time": "14:30 - 15:45", "text": "抵達 Springdale 享用遲午餐", "type": "dining", "detail": "推薦：Springdale 鎮上的 Oscar's Cafe，享用大份量美式或墨西哥融合料理 [3, 4]。" },
+        { "time": "16:00 - 18:00", "text": "入住鄰近公園的 SpringHill Suites 飯店並放鬆休息", "type": "hotel", "detail": "配合下午 4:00 左右入住。放妥行李並稍微休息，避開大道的擁擠噪音，享受大自然的寧靜與紅岩景緻 [3, 4]。" }
+      ],
+      "evening": [
+        { "time": "18:00 - 20:00", "text": "在 Springdale 小鎮散步或在飯店享受溫泉池放鬆雙腿", "type": "rest" },
+        { "time": "20:00 - 21:30", "text": "享用美味晚餐", "type": "dining", "detail": "推薦：Bit & Spur Restaurant 享用美西南料理或當地精緻餐酒 [3, 4]。" }
+      ]
+    },
+    "tips": "注意時差：進入猶他州時間會變快 1 小時！避開了週末，週一抵達錫安國家公園的入園與停車情況將會大幅改善。"
+  },
+  {
+    "dayNumber": 3,
+    "dayTitle": "7月7日 (週二) | 錫安國家公園全日深度遊（今日連住免退房）",
+    "drivingRoute": "SpringHill Suites ➔ The Narrows ➔ SpringHill Suites",
+    "drivingStats": "無須長途行車",
+    "googleMapsLink": "https://www.google.com/maps/dir/SpringHill+Suites+by+Marriott+Springdale+Zion+National+Park/The+Narrows",
+    "googleMapsEmbedUrl": "https://maps.google.com/maps?saddr=SpringHill+Suites+by+Marriott+Springdale+Zion+National+Park&daddr=The+Narrows&output=embed",
+    "itinerary": {
+      "morning": [
+        { "time": "08:00 - 09:30", "text": "睡飽後在飯店悠閒享用早餐", "type": "dining" },
+        { "time": "09:30 - 10:30", "text": "悠閒在房間換裝並準備入園裝備 (無須退房)", "type": "hotel", "detail": "今日連住免退房，行程較為彈性放鬆 [3]。" }
+      ],
+      "afternoon": [
+        { "time": "10:30 - 14:30", "text": "租借電動自行車入園，挑戰水上徒步路線 The Narrows", "type": "sight", "detail": "強烈推薦租借 E-Bike 探索錫安國家公園。週二入園人數較少，且 E-Bike 能完美跳過接駁巴士的排隊人龍，自由行駛於峽谷景觀大道中 [3, 4]。" },
+        { "time": "14:30 - 15:30", "text": "返回 Springdale 鎮上享用簡單遲午餐", "type": "dining", "detail": "補充涉水徒步後消耗的大量熱量 [3]。" },
+        { "time": "16:00 - 18:30", "text": "在飯店放鬆雙腿，並欣賞壯麗的「日照金山」絕美景色", "type": "rest" }
+      ],
+      "evening": [
+        { "time": "19:00 - 20:30", "text": "挑選鎮上特色餐廳悠閒用餐，享受安靜的夜晚", "type": "dining", "detail": "推薦：Bit & Spur Restaurant，提供美味的 Southwestern（美西南）與墨西哥融合料理，露天庭院非常舒服 [3, 4]。" }
+      ]
+    },
+    "tips": "暑期高溫下，請務必補充足夠水份與鹽分。今天不需移房，可以非常放鬆地體驗大自然。"
+  },
+  {
+    "dayNumber": 4,
+    "dayTitle": "7月8日 (週三) | 錫安 ➔ 11:00 退房 ➔ 猶他州肯鎮 (Kanab)",
+    "drivingRoute": "SpringHill Suites ➔ Belly of the Dragon ➔ Kanab",
+    "drivingStats": "車程約 1 小時",
+    "googleMapsLink": "https://www.google.com/maps/dir/SpringHill+Suites+by+Marriott+Springdale+Zion+National+Park/Belly+of+the+Dragon/Kanab",
+    "googleMapsEmbedUrl": "https://maps.google.com/maps?saddr=SpringHill+Suites+by+Marriott+Springdale+Zion+National+Park&daddr=Belly+of+the+Dragon+to:Kanab&output=embed",
+    "itinerary": {
+      "morning": [
+        { "time": "08:00 - 10:00", "text": "享用飯店早餐，補充體力", "type": "dining" },
+        { "time": "10:00 - 11:00", "text": "回房休息並整理行李，辦理退房準備啟程", "type": "hotel" }
+      ],
+      "afternoon": [
+        { "time": "11:00 - 12:30", "text": "驅車前往肯鎮，途中停留奇特景點「龍之腹」", "type": "sight", "detail": "Belly of the Dragon 是位於 89 號公路旁的奇特岩石隧道，非常適合拍照打卡 [5]。" },
+        { "time": "12:30 - 13:30", "text": "抵達肯鎮後享用風味午餐", "type": "dining", "detail": "推薦：Sego 創意料理（主打創意 New American 風味）或 Wild Thyme Bistro 的有機食材料理 [5]。" },
+        { "time": "13:30 - 15:30", "text": "參加 UTV 全地形越野車行程，探訪秘境峽谷", "type": "sight", "detail": "預訂 UTV 荒漠越野行程（5人/6人座車），探訪 Great Chamber 與 Peek-a-boo 紅岩紅沙秘境 [5]。" },
+        { "time": "15:45 - 17:00", "text": "入住肯鎮精品飯店辦理登記", "type": "hotel", "detail": "配合下午 4:00 左右辦理入住。推薦住宿：Canyons Boutique Hotel（含精緻現做免費早餐） [5]。" }
+      ],
+      "evening": [
+        { "time": "17:00 - 18:30", "text": "在飯店稍作休息或小鎮上散步放鬆", "type": "rest" },
+        { "time": "18:30 - 19:30", "text": "享用當地美式鄉村料理晚餐", "type": "dining", "detail": "推薦：Wild Thyme Cafe、Iron Horse 或 Houston's Trail's End 享用厚實美西牛排或烤肉 [5]。" },
+        { "time": "19:30 - 20:00", "text": "品嚐小鎮傳奇甜點", "type": "dining", "detail": "推薦：Brown Box Bake Shop，必點現烤熱鐵鍋軟餅乾 (Skillet Cookie) 搭配香草冰淇淋 [5]！" }
+      ]
+    },
+    "tips": "肯鎮 Sego 餐廳是當地最熱門的餐廳，強烈建議提前 1-2 週訂位。UTV 行程會有很多沙塵，建議帶上魔術頭巾防風沙。"
+  },
+  {
+    "dayNumber": 5,
+    "dayTitle": "7月9日 (週四) | 肯鎮 ➔ 11:00 退房 ➔ 亞利桑那州佩奇鎮 (Page)",
+    "drivingRoute": "Kanab ➔ Page",
+    "drivingStats": "車程約 1.5 小時",
+    "googleMapsLink": "https://www.google.com/maps/dir/Kanab/Page",
+    "googleMapsEmbedUrl": "https://maps.google.com/maps?saddr=Kanab&daddr=Page&output=embed",
+    "itinerary": {
+      "morning": [
+        { "time": "08:00 - 10:00", "text": "悠閒享用飯店精緻早餐", "type": "dining" },
+        { "time": "10:00 - 11:00", "text": "整理行李，辦理退房啟程", "type": "hotel" }
+      ],
+      "afternoon": [
+        { "time": "11:00 - 12:30", "text": "驅車前往亞利桑那州佩奇鎮 (Page)", "type": "drive", "detail": "穿梭於紅岩荒漠公路，車程約 1.5 小時。" },
+        { "time": "12:30 - 13:30", "text": "抵達佩奇享用超級炸雞午餐", "type": "dining", "detail": "推薦：BirdHouse 炸雞，外皮極酥、多汁，擁有多種風味特調醬汁 [5]。" },
+        { "time": "13:30 - 15:30", "text": "遊覽馬蹄灣及探訪秘境岩石", "type": "sight", "detail": "前往 Horseshoe Bend 觀賞馬蹄灣急流奇景，也可順遊免抽籤的 New Wave 秘境波浪谷地貌 [5]。" },
+        { "time": "15:45 - 16:30", "text": "入住佩奇鎮景觀飯店", "type": "hotel", "detail": "配合下午 4:00 左右入住辦理登記。住宿推薦 Hyatt Place Page Lake Powell [5]。" }
+      ],
+      "evening": [
+        { "time": "16:30 - 18:30", "text": "預約 Lake Powell 包船/遊船，欣賞絕美日落", "type": "sight", "detail": "配合飯店入住，將包船移至傍晚，此時氣溫舒適，且能欣賞鮑威爾湖最知名的金黃日落景色 [5]。" },
+        { "time": "19:00 - 20:30", "text": "享用美式 BBQ 或特色晚餐", "type": "dining", "detail": "推薦：Big John's Texas BBQ（聽現場鄉村樂隊）或 Sunset 89 觀景餐廳 [5]。" }
+      ]
+    },
+    "tips": "包威爾湖包船是本日亮點，能從湖面仰望壯麗峽谷。Big John's BBQ 的露天音樂會氣氛非常棒，適合全家一同放鬆。"
+  },
+  {
+    "dayNumber": 6,
+    "dayTitle": "7月10日 (週五) | 佩奇鎮 ➔ 09:00 退房 ➔ 大峽谷 ➔ 金曼 (Kingman)",
+    "drivingRoute": "Page ➔ Grand Canyon ➔ Kingman",
+    "drivingStats": "車程約 2.5 小時 (大峽谷) + 2.5 小時 (金曼)",
+    "googleMapsLink": "https://www.google.com/maps/dir/Page/Grand+Canyon+National+Park/Kingman",
+    "googleMapsEmbedUrl": "https://maps.google.com/maps?saddr=Page&daddr=Grand+Canyon+National+Park+to:Kingman&output=embed",
+    "itinerary": {
+      "morning": [
+        { "time": "08:00 - 09:00", "text": "快速享用早餐與精緻咖啡", "type": "dining", "detail": "可提早出發以爭取大峽谷與下午入住的充足時間。" },
+        { "time": "09:00 - 10:00", "text": "整理行李，辦理退房準備出發", "type": "hotel" }
+      ],
+      "afternoon": [
+        { "time": "10:00 - 12:30", "text": "驅車沿景觀公路前往大峽谷國家公園", "type": "drive" },
+        { "time": "12:30 - 14:30", "text": "參觀大峽谷瞭望塔與馬瑟角，並享用懸崖邊午餐", "type": "sight", "detail": "在大峽谷懸崖邊的歷史酒店 El Tovar Dining Room 享用午餐，隔窗觀賞震撼大峽谷 [106, 107]。隨後在 Mather Point 散步拍照。" },
+        { "time": "14:30 - 16:30", "text": "沿著歷史 66 號公路驅車前往金曼 (Kingman)", "type": "drive", "detail": "車程約 2.5 小時。路途平直，沿途盡享美西荒野與復古小鎮風情。" },
+        { "time": "16:30 - 17:30", "text": "入住金曼 66 號公路主題旅館", "type": "hotel", "detail": "配合下午 4:30 左右辦理登記入住，體驗經典 Motel 霓虹燈氛圍 [102, 103]。" }
+      ],
+      "evening": [
+        { "time": "17:30 - 18:30", "text": "在金曼歷史小鎮散步或參觀火車博物館", "type": "sight", "detail": "感受 Route 66 美式情懷與蒸汽火車歷史。" },
+        { "time": "18:30 - 20:00", "text": "享用經典美式公路晚餐", "type": "dining", "detail": "推薦：前往 Retro 1950s Diners，聽著點唱機 (Jukebox) 老歌享用大漢堡與招牌奶昔 [109, 110]。" }
+      ]
+    },
+    "tips": "大峽谷南緣遊覽時間約 2-3 小時即可涵蓋精華，今天提早於大早 9:00 出發，可以完美銜接下午 4 點多抵達金曼辦理入住。"
+  },
+  {
+    "dayNumber": 7,
+    "dayTitle": "7月11日 (週六) | 金曼 (Kingman) ➔ 11:00 退房 ➔ （中繼休息） ➔ 洛杉磯住家",
+    "drivingRoute": "Kingman ➔ Los Angeles (23944 Francisco Way)",
+    "drivingStats": "總車程約 4.5 - 5 小時",
+    "googleMapsLink": "https://www.google.com/maps/dir/Kingman/23944+Francisco+Way,+Valencia,+CA+91354",
+    "googleMapsEmbedUrl": "https://maps.google.com/maps?saddr=Kingman&daddr=23944+Francisco+Way,+Valencia,+CA+91354&output=embed",
+    "itinerary": {
+      "morning": [
+        { "time": "08:00 - 10:00", "text": "在金曼睡到自然醒，享用悠閒美式早午餐", "type": "dining", "detail": "推薦點經典美式鬆餅、炒蛋、大培根與奶昔，體驗美國公路 culture [110]。" },
+        { "time": "10:00 - 11:00", "text": "整理行李，於 11:00 完成最後一次退房", "type": "hotel", "detail": "可以在小鎮散步，與 Route 66 霓虹燈招牌拍最後合照。" }
+      ],
+      "afternoon": [
+        { "time": "11:00 - 13:30", "text": "踏上返回洛杉磯的長途返程", "type": "drive", "detail": "行經莫哈維沙漠 (Mojave Desert)，穿過加州邊界。" },
+        { "time": "13:30 - 14:30", "text": "於交流道附近（如 Barstow 附近）休息與享用簡單午餐", "type": "rest", "detail": "長途駕駛中繼休息，確保行車安全。" },
+        { "time": "14:30 - 17:00", "text": "完成最後路段，順利返回洛杉磯住家", "type": "drive" }
+      ],
+      "evening": [
+        { "time": "17:00", "text": "返抵洛杉磯 Valencia 住家，結束豐富充實的七日旅行", "type": "home" }
+      ]
+    },
+    "tips": "最後一天為週六，行車時間接近 5 小時，莫哈維沙漠路段可能風沙較大或高溫，注意車輛水溫與輪胎狀況，Barstow 是一個極佳溫馨的中繼加油與補給站。"
+  }
+];
+
+// ==========================================================================
+// 1.1 Google Maps List Saved Locations (2026_07_Summer Trip)
+// ==========================================================================
+const savedLocationsData = [
+  {
+    name: "23944 Francisco Way",
+    type: "起點 / 終點 (住家)",
+    typeKey: "home",
+    icon: "fa-house",
+    lat: 34.4651149,
+    lng: -118.5602478,
+    days: "7月5日 出發點 / 7月11日 終點",
+    embedUrl: "https://maps.google.com/maps?q=34.4651149,-118.5602478&z=15&output=embed"
+  },
+  {
+    name: "JW Marriott Las Vegas Resort & Spa",
+    type: "奢華渡假村 (住宿)",
+    typeKey: "hotel",
+    icon: "fa-hotel",
+    lat: 36.1758508,
+    lng: -115.2911168,
+    days: "7月5 - 6日 拉斯維加斯住宿",
+    embedUrl: "https://maps.google.com/maps?q=36.1758508,-115.2911168&z=15&output=embed"
+  },
+  {
+    name: "Treasure Island (Mystère 劇場)",
+    type: "經典馬戲團秀 (景點)",
+    typeKey: "sight",
+    icon: "fa-eye",
+    lat: 36.1246743,
+    lng: -115.1721528,
+    days: "7月5日 晚間行程",
+    embedUrl: "https://maps.google.com/maps?q=36.1246743,-115.1721528&z=15&output=embed"
+  },
+  {
+    name: "SpringHill Suites by Marriott Springdale Zion National Park",
+    type: "國家公園精品酒店 (住宿)",
+    typeKey: "hotel",
+    icon: "fa-hotel",
+    lat: 37.1844714,
+    lng: -113.0006139,
+    days: "7月6 - 7日 錫安國家公園住宿",
+    embedUrl: "https://maps.google.com/maps?q=37.1844714,-113.0006139&z=15&output=embed"
+  },
+  {
+    name: "The Narrows",
+    type: "錫安一線天涉水步道 (景點)",
+    typeKey: "sight",
+    icon: "fa-mountain",
+    lat: 37.3050051,
+    lng: -112.9491162,
+    days: "7月7日 深度健行行程",
+    embedUrl: "https://maps.google.com/maps?q=37.3050051,-112.9491162&z=15&output=embed"
+  },
+  {
+    name: "Kanab",
+    type: "猶他州肯鎮 (中繼 / 住宿)",
+    typeKey: "city",
+    icon: "fa-map-pin",
+    lat: 37.0474855,
+    lng: -112.5263145,
+    days: "7月8日 越野行程與住宿",
+    embedUrl: "https://maps.google.com/maps?q=37.0474855,-112.5263145&z=15&output=embed"
+  },
+  {
+    name: "Page",
+    type: "亞利桑那州佩奇鎮 (中繼 / 住宿)",
+    typeKey: "city",
+    icon: "fa-map-pin",
+    lat: 36.9147222,
+    lng: -111.4558333,
+    days: "7月9日 羚羊谷/包威爾湖住宿",
+    embedUrl: "https://maps.google.com/maps?q=36.9147222,-111.4558333&z=15&output=embed"
+  },
+  {
+    name: "Grand Canyon National Park",
+    type: "大峽谷國家公園 (景點)",
+    typeKey: "sight",
+    icon: "fa-tree",
+    lat: 36.2678855,
+    lng: -112.3535253,
+    days: "7月10日 壯麗峽谷遊覽",
+    embedUrl: "https://maps.google.com/maps?q=36.2678855,-112.3535253&z=15&output=embed"
+  },
+  {
+    name: "Kingman",
+    type: "66號公路歷史小鎮 (住宿)",
+    typeKey: "city",
+    icon: "fa-map-pin",
+    lat: 35.1912977,
+    lng: -114.0522845,
+    days: "7月10 - 11日 住宿與出發點",
+    embedUrl: "https://maps.google.com/maps?q=35.1912977,-114.0522845&z=15&output=embed"
+  }
+];
+
+// ==========================================================================
+// 2. Booking Tracker Configuration
+// ==========================================================================
+const bookingItems = [
+  { id: 'costco_supplies', label: 'Costco 行前採購 (保冰桶、飲料、冰塊)', estimate: 120 },
+  { id: 'las_vegas_hotel', label: 'Las Vegas 酒店預訂 (2晚 / 雙人房x2)', estimate: 700 },
+  { id: 'hells_kitchen', label: "地獄廚房 Hell's Kitchen 晚餐預約 (5人)", estimate: 450 },
+  { id: 'bacchanal_buffet', label: 'Caesars Bacchanal Buffet 預約 (5人)', estimate: 500 },
+  { id: 'mystere_tickets', label: '太陽馬戲團 Mystère 門票預訂 (5人)', estimate: 400 },
+  { id: 'zion_ebike', label: 'Zion 錫安國家公園 E-Bike 租借預約 (5台)', estimate: 400 },
+  { id: 'springdale_hotel', label: 'Springdale 溫泉酒店預訂 (1晚 / 雙人房x2)', estimate: 450 },
+  { id: 'kanab_utv', label: 'Kanab UTV 荒漠越野行程預訂 (5人/6人座車)', estimate: 550 },
+  { id: 'kanab_hotel', label: 'Kanab 按摩池酒店預訂 (1晚 / 雙人房x2)', estimate: 300 },
+  { id: 'lake_powell_boat', label: 'Page 鮑威爾湖包船/遊船預訂 (5人)', estimate: 450 },
+  { id: 'page_hotel', label: 'Page 酒店預訂 (1晚 / 雙人房x2)', estimate: 360 },
+  { id: 'national_park_pass', label: '美西國家公園年票實體卡 (按車收費，1張即可)', estimate: 80 },
+  { id: 'route66_hotel', label: 'Route 66 歷史小鎮酒店預訂 (1晚 / 雙人房x2)', estimate: 240 }
+];
+
+// ==========================================================================
+// 3. Packing Checklist Configuration
+// ==========================================================================
+const packingData = {
+  hiking: {
+    title: '溯溪與徒步健行',
+    icon: 'fa-person-hiking',
+    items: ['涉水水鞋 / 溯溪鞋', '氯丁橡膠防沙襪 (Neo Socks)', '登山杖 / 溪流防滑木棍', '大容量雙肩水袋包 (Hydration Pack)', '手機雙重防水袋']
+  },
+  sunProtection: {
+    title: '防曬與氣候防護',
+    icon: 'fa-sun',
+    items: ['SPF 50+ 防曬乳 & 防曬護唇膏', '運動型偏光太陽眼鏡', '遮陽帽 (寬邊帽或棒球帽)', '排汗速乾短袖/短褲', '輕薄長袖防曬外套', '保暖衛衣/防風衣 (沙漠早晚溫差大)']
+  },
+  electronics: {
+    title: '車載與電子裝備',
+    icon: 'fa-car-side',
+    items: ['強磁性車載手機架 (導航必備)', '車載點煙器轉換器 & 充電線', '大容量防水行動電源', '離線地圖下載 (Google Maps / AllTrails)', '相機 / GoPro 運動相機']
+  },
+  daily: {
+    title: '日常證件與備品',
+    icon: 'fa-id-card',
+    items: ['國家公園年票實體卡', '美國駕照 (自駕證件)', '雙重備用信用卡', 'Costco 會員卡', '車載大包濕紙巾 & 乾洗手']
+  }
+};
+
+// ==========================================================================
+// 5. State Variables
+// ==========================================================================
+let activeDay = 1;
+let bookingStatus = {};
+let bookingCosts = {};
+let packingStatus = {};
+
+// ==========================================================================
+// 6. Initialization & Storage Load
+// ==========================================================================
+document.addEventListener('DOMContentLoaded', () => {
+  loadFromLocalStorage();
+  renderDayTabs();
+  renderDayDetails(activeDay);
+  renderBookingChecklist();
+  renderPackingList();
+  renderSavedLocations();
+  updateExplorerMap();
+});
+
+function loadFromLocalStorage() {
+  const savedBooking = localStorage.getItem('so_booking_status');
+  if (savedBooking) {
+    bookingStatus = JSON.parse(savedBooking);
+  } else {
+    bookingItems.forEach(item => { bookingStatus[item.id] = false; });
+  }
+
+  const savedCosts = localStorage.getItem('so_booking_costs');
+  if (savedCosts) {
+    bookingCosts = JSON.parse(savedCosts);
+  } else {
+    bookingItems.forEach(item => { bookingCosts[item.id] = ''; });
+  }
+
+  const savedPacking = localStorage.getItem('so_packing_status');
+  if (savedPacking) {
+    packingStatus = JSON.parse(savedPacking);
+  } else {
+    Object.keys(packingData).forEach(cat => {
+      packingData[cat].items.forEach(item => {
+        packingStatus[item] = false;
+      });
+    });
+  }
+}
+
+function saveToLocalStorage(key, data) {
+  localStorage.setItem(key, JSON.stringify(data));
+}
+
+// ==========================================================================
+// 7. Day Tabs Rendering & Switching
+// ==========================================================================
+function renderDayTabs() {
+  const container = document.getElementById('dayTabsContainer');
+  if (!container) return;
+  container.innerHTML = '';
+
+  itineraryData.forEach(day => {
+    const btn = document.createElement('button');
+    btn.className = `day-tab-btn ${day.dayNumber === activeDay ? 'active' : ''}`;
+    btn.id = `tab-day-${day.dayNumber}`;
+    
+    let shortTitle = day.dayTitle;
+    if (day.dayTitle.includes(' | ')) {
+      const parts = day.dayTitle.split(' | ');
+      shortTitle = parts[0] + ' | ' + parts[parts.length - 1].split(' ➔ ').slice(-1)[0].replace(/（.*）|\(.*\)/g, '').trim();
+    } else if (day.dayTitle.includes(' ➔ ')) {
+      const parts = day.dayTitle.split(' ➔ ');
+      const start = parts[0].replace(/（.*）|\(.*\)/g, '').trim();
+      let end = parts[parts.length - 1].replace(/（.*）|\(.*\)/g, '').trim();
+      shortTitle = `${start} ➔ ${end}`;
+    } else {
+      shortTitle = day.dayTitle.replace(/（.*）|\(.*\)/g, '').trim();
+    }
+
+    btn.innerHTML = `
+      <div class="day-tab-info">
+        <span class="day-tab-num">DAY 0${day.dayNumber}</span>
+        <span class="day-tab-title">${shortTitle}</span>
+      </div>
+      <span class="day-tab-meta"><i class="fa-solid fa-chevron-right"></i></span>
+    `;
+
+    btn.addEventListener('click', () => {
+      document.querySelector('.day-tab-btn.active')?.classList.remove('active');
+      btn.classList.add('active');
+      
+      activeDay = day.dayNumber;
+      renderDayDetails(activeDay);
+      updateExplorerMap();
+    });
+
+    container.appendChild(btn);
+  });
+}
+
+function renderDayDetails(dayNum) {
+  const day = itineraryData.find(d => d.dayNumber === dayNum);
+  const container = document.getElementById('dayDetailCard');
+  if (!day || !container) return;
+
+  // Helper function to render a list of timeline items
+  const renderPeriodItems = (items) => {
+    if (!items || items.length === 0) {
+      return `<p class="period-empty">無行程安排</p>`;
+    }
+    return `
+      <ul class="timeline-list">
+        ${items.map(item => {
+          let iconClass = 'fa-calendar-day';
+          if (item.type === 'dining') iconClass = 'fa-utensils';
+          else if (item.type === 'drive') iconClass = 'fa-car-side';
+          else if (item.type === 'sight') iconClass = 'fa-mountain-sun';
+          else if (item.type === 'hotel') iconClass = 'fa-key';
+          else if (item.type === 'rest') iconClass = 'fa-couch';
+          else if (item.type === 'show') iconClass = 'fa-masks-theater';
+          else if (item.type === 'home') iconClass = 'fa-house';
+
+          return `
+            <li class="timeline-item ${item.type || ''}">
+              <div class="timeline-icon-col">
+                <div class="timeline-icon"><i class="fa-solid ${iconClass}"></i></div>
+              </div>
+              <div class="timeline-content-col">
+                <span class="timeline-time">${item.time}</span>
+                <span class="timeline-desc">${item.text}</span>
+                ${item.detail ? `<div class="timeline-detail">${item.detail}</div>` : ''}
+              </div>
+            </li>
+          `;
+        }).join('')}
+      </ul>
+    `;
+  };
+
+  container.innerHTML = `
+    <div class="detail-header">
+      <span class="detail-day-num">DAY 0${day.dayNumber}</span>
+      <h2 class="detail-day-title">${day.dayTitle}</h2>
+    </div>
+
+    <div class="drive-info-bar">
+      <div class="drive-stat">
+        <i class="fa-solid fa-route"></i>
+        <span>路線：<span class="drive-stat-val">${day.drivingRoute}</span></span>
+      </div>
+      <div class="drive-stat">
+        <i class="fa-solid fa-gauge-high"></i>
+        <span>統計：<span class="drive-stat-val">${day.drivingStats}</span></span>
+      </div>
+      <div class="drive-stat">
+        <a href="${day.googleMapsLink}" target="_blank" class="drive-map-link">
+          <i class="fa-solid fa-location-arrow"></i> 開啟 Google Maps 導航
+        </a>
+      </div>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-period">
+        <div class="period-header morning">
+          <i class="fa-solid fa-sun-rising"></i> 上午行程 (Morning)
+        </div>
+        ${renderPeriodItems(day.itinerary.morning)}
+      </div>
+      <div class="timeline-period">
+        <div class="period-header afternoon">
+          <i class="fa-solid fa-sun"></i> 下午行程 (Afternoon)
+        </div>
+        ${renderPeriodItems(day.itinerary.afternoon)}
+      </div>
+      <div class="timeline-period">
+        <div class="period-header evening">
+          <i class="fa-solid fa-moon"></i> 晚間行程 (Evening)
+        </div>
+        ${renderPeriodItems(day.itinerary.evening)}
+      </div>
+    </div>
+
+    <div class="tip-panel">
+      <h4><i class="fa-solid fa-lightbulb"></i> 行程貼士 & 住宿建議</h4>
+      <p class="tip-text">${day.tips}</p>
+    </div>
+  `;
+}
+
+// ==========================================================================
+// 8. Booking Checklist & Budget Tracker
+// ==========================================================================
+function renderBookingChecklist() {
+  const container = document.getElementById('bookingChecklist');
+  if (!container) return;
+  container.innerHTML = '';
+
+  bookingItems.forEach(item => {
+    const li = document.createElement('li');
+    li.className = 'tracker-item';
+
+    const isChecked = bookingStatus[item.id] || false;
+    const actualCost = bookingCosts[item.id] || '';
+
+    li.innerHTML = `
+      <input type="checkbox" id="chk-${item.id}" ${isChecked ? 'checked' : ''}>
+      <div class="tracker-label-container">
+        <label for="chk-${item.id}" class="tracker-label">${item.label}</label>
+      </div>
+      <input type="number" 
+             class="tracker-cost-input" 
+             id="cost-${item.id}" 
+             placeholder="$${item.estimate}" 
+             value="${actualCost}" 
+             min="0"
+             aria-label="${item.label}實際金額">
+    `;
+
+    const checkbox = li.querySelector(`#chk-${item.id}`);
+    checkbox.addEventListener('change', () => {
+      bookingStatus[item.id] = checkbox.checked;
+      saveToLocalStorage('so_booking_status', bookingStatus);
+      updateBookingStats();
+    });
+
+    const costInput = li.querySelector(`#cost-${item.id}`);
+    costInput.addEventListener('input', () => {
+      bookingCosts[item.id] = costInput.value;
+      saveToLocalStorage('so_booking_costs', bookingCosts);
+      updateBookingStats();
+    });
+
+    container.appendChild(li);
+  });
+
+  updateBookingStats();
+}
+
+function updateBookingStats() {
+  const totalItemsCount = bookingItems.length;
+  const checkedItemsCount = Object.values(bookingStatus).filter(Boolean).length;
+  const percent = totalItemsCount > 0 ? Math.round((checkedItemsCount / totalItemsCount) * 100) : 0;
+
+  const progressTextEl = document.getElementById('bookingProgressText');
+  const progressBarEl = document.getElementById('bookingProgressBar');
+  
+  if (progressTextEl) progressTextEl.innerText = `${percent}%`;
+  if (progressBarEl) progressBarEl.style.width = `${percent}%`;
+
+  let totalEstimate = 0;
+  let totalActual = 0;
+
+  bookingItems.forEach(item => {
+    totalEstimate += item.estimate;
+    
+    const costVal = parseFloat(bookingCosts[item.id]);
+    if (!isNaN(costVal)) {
+      totalActual += costVal;
+    } else if (bookingStatus[item.id]) {
+      totalActual += item.estimate;
+    }
+  });
+
+  const estEl = document.getElementById('totalEstimateVal');
+  const actEl = document.getElementById('totalActualVal');
+
+  if (estEl) estEl.innerText = `$${totalEstimate}`;
+  if (actEl) actEl.innerText = `$${totalActual}`;
+}
+
+// ==========================================================================
+// 9. Packing List Checklist
+// ==========================================================================
+function renderPackingList() {
+  const grid = document.getElementById('packingListGrid');
+  if (!grid) return;
+  grid.innerHTML = '';
+
+  Object.keys(packingData).forEach(catKey => {
+    const category = packingData[catKey];
+    const catDiv = document.createElement('div');
+    catDiv.className = 'packing-category';
+
+    catDiv.innerHTML = `
+      <h4><i class="fa-solid ${category.icon}"></i> ${category.title}</h4>
+      <ul class="packing-item-list"></ul>
+    `;
+
+    const listUl = catDiv.querySelector('.packing-item-list');
+
+    category.items.forEach((item, idx) => {
+      const isChecked = packingStatus[item] || false;
+      const li = document.createElement('li');
+      li.className = 'packing-item';
+      const inputId = `pack-${catKey}-${idx}`;
+
+      li.innerHTML = `
+        <input type="checkbox" id="${inputId}" ${isChecked ? 'checked' : ''}>
+        <label for="${inputId}">${item}</label>
+      `;
+
+      const checkbox = li.querySelector('input[type="checkbox"]');
+      checkbox.addEventListener('change', () => {
+        packingStatus[item] = checkbox.checked;
+        saveToLocalStorage('so_packing_status', packingStatus);
+        updatePackingStats();
+      });
+
+      listUl.appendChild(li);
+    });
+
+    grid.appendChild(catDiv);
+  });
+
+  updatePackingStats();
+}
+
+// ==========================================================================
+// 10. Map Explorer Loader
+// ==========================================================================
+function updateExplorerMap() {
+  const liveFrame = document.getElementById('liveMapIframe');
+  if (!liveFrame) return;
+  const day = itineraryData.find(d => d.dayNumber === activeDay);
+  if (day && day.googleMapsEmbedUrl) {
+    liveFrame.src = day.googleMapsEmbedUrl;
+  }
+}
+
+// ==========================================================================
+// 11. Google Maps Saved Locations Rendering & Interaction
+// ==========================================================================
+function renderSavedLocations() {
+  const container = document.getElementById('locationsGrid');
+  if (!container) return;
+  container.innerHTML = '';
+
+  savedLocationsData.forEach(loc => {
+    const card = document.createElement('div');
+    card.className = 'location-card';
+
+    card.innerHTML = `
+      <div class="location-info">
+        <div class="location-icon-wrapper">
+          <i class="fa-solid ${loc.icon}"></i>
+        </div>
+        <div class="location-details">
+          <span class="location-type">${loc.type}</span>
+          <span class="location-name">${loc.name}</span>
+        </div>
+      </div>
+      <div class="location-meta">
+        <span class="location-day-badge">${loc.days}</span>
+        <button class="location-view-btn">
+          <i class="fa-solid fa-map-location-dot"></i> 在地圖中查看
+        </button>
+      </div>
+    `;
+
+    const viewBtn = card.querySelector('.location-view-btn');
+    viewBtn.addEventListener('click', () => {
+      const liveFrame = document.getElementById('liveMapIframe');
+      if (liveFrame) {
+        liveFrame.src = loc.embedUrl;
+      }
+      
+      const mapSection = document.querySelector('.maps-explorer');
+      if (mapSection) {
+        mapSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+
+    container.appendChild(card);
+  });
+}
