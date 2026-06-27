@@ -638,6 +638,42 @@ body {
   font-weight: 500;
 }
 
+.timeline-title-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 2px 0;
+}
+
+.timeline-nav-btn {
+  background: rgba(0, 242, 254, 0.03);
+  border: 1px solid rgba(0, 242, 254, 0.25);
+  color: var(--color-cyan);
+  padding: 4px 12px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 0.72rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.timeline-nav-btn:hover {
+  background: rgba(0, 242, 254, 0.12);
+  border-color: var(--color-cyan);
+  box-shadow: var(--shadow-cyan-glow);
+  transform: translateY(-1px);
+}
+
+.timeline-nav-btn i {
+  font-size: 0.7rem;
+}
+
 .timeline-detail {
   font-size: 0.8rem;
   color: var(--text-muted);

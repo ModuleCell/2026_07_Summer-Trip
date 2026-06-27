@@ -66,9 +66,6 @@ const staticTranslations = {
   }
 };
 
-// ==========================================================================
-// 1. Itinerary Data (Day 1 - Day 7)
-// ==========================================================================
 const itineraryData = [
   {
     "dayNumber": 1,
@@ -92,13 +89,13 @@ const itineraryData = [
           "time": "08:00 - 10:00", 
           "text": { "zh": "在洛杉磯吃完豐盛早餐後準備出發", "en": "Have a hearty breakfast in LA and prepare to depart" }, 
           "type": "dining", 
-          "detail": { "zh": "吃飽儲備體力以利長途自駕。", "en": "Eat well to charge up for the long drive." } 
+          "detail": { "zh": "吃飽儲備體力以利長途自駕。", "en": "Eat well to charge up for the long drive." }
         },
         { 
           "time": "10:00 - 12:00", 
           "text": { "zh": "啟程前往拉斯維加斯", "en": "Set off for Las Vegas via Interstate 15" }, 
           "type": "drive", 
-          "detail": { "zh": "行駛 15 號州際公路。因避開國慶日當天車潮，今日出發行車路況將會非常順暢。", "en": "Drive along I-15. Starting today avoids holiday traffic, promising smooth road conditions." } 
+          "detail": { "zh": "行駛 15 號州際公路。因避開國慶日當天車潮，今日出發行車路況將會非常順暢。", "en": "Drive along I-15. Starting today avoids holiday traffic, promising smooth road conditions." }
         }
       ],
       "afternoon": [
@@ -106,39 +103,44 @@ const itineraryData = [
           "time": "12:00 - 13:00", 
           "text": { "zh": "於 Barstow 停留並享用 In-N-Out 漢堡", "en": "Stop at Barstow and enjoy In-N-Out burgers" }, 
           "type": "dining", 
-          "detail": { "zh": "公路自駕經典中繼站。在 Barstow 享用必點的隱藏菜單 Double-Double Animal Style 搭配奶昔，並順便加油與休息。", "en": "A classic road trip stop. Enjoy the hidden menu Double-Double Animal Style with a milkshake, and gas up/stretch." } 
+          "detail": { "zh": "公路自駕經典中繼站。在 Barstow 享用必點的隱藏菜單 Double-Double Animal Style 搭配奶昔，並順便加油與休息。", "en": "A classic road trip stop. Enjoy the hidden menu Double-Double Animal Style with a milkshake, and gas up/stretch." },
+          "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=In-N-Out+Burger+Barstow+CA"
         },
         { 
           "time": "13:00 - 15:00", 
           "text": { "zh": "繼續上路前往拉斯維加斯", "en": "Continue driving to Las Vegas" }, 
           "type": "drive", 
-          "detail": { "zh": "行駛剩餘車程，約 2 小時阻礙極小抵達拉斯維加斯。", "en": "Complete the remaining drive, about 2 hours with minimal traffic to Vegas." } 
+          "detail": { "zh": "行駛剩餘車程，約 2 小時阻礙極小抵達拉斯維加斯。", "en": "Complete the remaining drive, about 2 hours with minimal traffic to Vegas." }
         },
         { 
           "time": "15:00 - 16:00", 
           "text": { "zh": "抵達拉斯維加斯，前往 Costco 採買物資", "en": "Arrive in Las Vegas and shop for supplies at Costco" }, 
           "type": "rest", 
-          "detail": { "zh": "抵達後前往當地 Costco 購買保冰桶與冰塊，為接下來的公路旅行備妥隨車冰箱，並採購瓶裝水與零食乾糧 [1, 2]。", "en": "Buy a cooler box and ice bags at Costco to serve as a mobile fridge for the trip, plus bottled water and snacks [1, 2]." } 
+          "detail": { "zh": "抵達後前往當地 Costco 購買保冰桶與冰塊，為接下來的公路旅行備妥隨車冰箱，並採購瓶裝水與零食乾糧 [1, 2]。", "en": "Buy a cooler box and ice bags at Costco to serve as a mobile fridge for the trip, plus bottled water and snacks [1, 2]." },
+          "googleMapsLink": "https://maps.app.goo.gl/HYor7VU8KiwJJWLu7"
         },
         { 
           "time": "16:00 - 18:00", 
           "text": { "zh": "入住賭城大道正中心的 ARIA 渡假村並稍作休息", "en": "Check in at ARIA Resort & Casino on the Strip and rest" }, 
           "type": "hotel", 
-          "detail": { "zh": "配合下午 4:00 左右辦理入住。放妥行李並稍微休息，避開大道的擁擠噪音，享受高科技奢華客房。", "en": "Check in around 4:00 PM. Drop luggage and unwind in the high-tech luxury room away from strip traffic." } 
+          "detail": { "zh": "配合下午 4:00 左右辦理入住。放妥行李並稍微休息，避開大道的擁擠噪音，享受高科技奢華客房。", "en": "Check in around 4:00 PM. Drop luggage and unwind in the high-tech luxury room away from strip traffic." },
+          "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=ARIA+Resort+%26+Casino+Las+Vegas"
         }
       ],
       "evening": [
         { 
           "time": "18:00 - 20:00", 
-          "text": { "zh": "前往春山路 (Spring Mountain Road) 亞洲區享用晚餐", "en": "Dinner at Spring Mountain Road (Chinatown) for Asian cuisine" }, 
+          "text": { "zh": "在 ARIA 渡假村內的鼎泰豐享用晚餐", "en": "Dinner at Din Tai Fung (ARIA Resort & Casino)" }, 
           "type": "dining", 
-          "detail": { "zh": "推薦：春山路亞洲區的頂級泰國菜 Lotus of Siam、成都Taste，或越南牛肉粉與大排檔美食 [1, 2]。", "en": "Recommended: Lotus of Siam (legendary Northern Thai), Taste (Sichuan), or popular local Vietnamese places [1, 2]." } 
+          "detail": { "zh": "位於 ARIA 渡假村內。享用著名的黃金十八摺小籠包、紅油抄手與排骨蛋炒飯。建議提早透過官網預約 [1, 2]。", "en": "Located inside ARIA Resort. Enjoy their world-famous Xiao Long Bao, spicy wontons, and pork chop fried rice. Booking in advance is recommended [1, 2]." },
+          "googleMapsLink": "https://maps.app.goo.gl/sngKADDJD3MbF7ts8"
         },
         { 
           "time": "20:00 - 21:30", 
           "text": { "zh": "漫步 Strip 大道，觀賞 Bellagio 音樂噴泉", "en": "Stroll along the Strip, watch Bellagio Fountains & Conservatory" }, 
           "type": "sight", 
-          "detail": { "zh": "從 Aria 步行至 Bellagio 極近。可散步觀賞世界知名的水舞噴泉與室內溫室花園，享受賭城繁華夜景 [5]。", "en": "An easy walk from Aria to Bellagio. View the famous fountain show and the seasonal conservatory flower display [5]." } 
+          "detail": { "zh": "從 Aria 步行至 Bellagio 極近。可散步觀賞世界知名的水舞噴泉與室內溫室花園，享受賭城繁華夜景 [5]。", "en": "An easy walk from Aria to Bellagio. View the famous fountain show and the seasonal conservatory flower display [5]." },
+          "googleMapsLink": "https://maps.app.goo.gl/XEjHWqvkWyxjeDyu6"
         }
       ]
     },
@@ -166,62 +168,61 @@ const itineraryData = [
     "itinerary": {
       "morning": [
         { 
-          "time": "09:00 - 10:30", 
-          "text": { "zh": "悠閒享用早餐或精緻早茶", "en": "Have a leisurely breakfast or brunch" }, 
+          "time": "08:00 - 10:00", 
+          "text": { "zh": "在 ARIA 渡假村內的 Proper Eats Food Hall 享用悠閒早餐", "en": "Leisurely breakfast at Proper Eats Food Hall (ARIA)" }, 
           "type": "dining", 
-          "detail": { "zh": "在 Aria 內或大道旁挑選喜愛的特色早餐，放慢步調享受度假氛圍。", "en": "Pick a cozy cafe in Aria or along the Strip to enjoy a relaxed vacation morning." } 
+          "detail": { "zh": "位於 ARIA 渡假村內二樓。有多樣化的精緻美食選擇（如 Easy Donuts、Egghead 蛋沙拉三明治等），可隨意挑選喜愛的早餐項目。", "en": "Located on the second level of ARIA Resort. Features diverse upscale food concepts (like Easy Donuts, Egghead breakfast sandwiches, etc.) to suit everyone's tastes." },
+          "googleMapsLink": "https://maps.app.goo.gl/n4QNeh2snxqFD2aH7"
         },
         { 
-          "time": "10:30 - 12:00", 
+          "time": "10:00 - 12:00", 
           "text": { "zh": "體驗 FlyOver Las Vegas 飛行影院", "en": "Experience FlyOver Las Vegas flying theater" }, 
           "type": "sight", 
-          "detail": { "zh": "前往 Aria 對面的 Showcase Mall 體驗 FlyOver 4D 飛行影院，選擇《美西奇觀》影片，以懸空視角飛越接下來將去到的錫安與大峽谷，作為最佳公路旅行行前預告 [4]！", "en": "Walk across the street to Showcase Mall. FlyOver uses suspended motion seats and 4D effects. Choose 'Wonders of the American West' as a preview of Zion and Grand Canyon [4]!" } 
+          "detail": { "zh": "前往 Aria 對面的 Showcase Mall 體驗 FlyOver 4D 飛行影院，選擇《美西奇觀》影片，以懸空視角飛越接下來將去到的錫安與大峽谷，作為最佳公路旅行行前預告 [4]！", "en": "Walk across the street to Showcase Mall. FlyOver uses suspended motion seats and 4D effects. Choose 'Wonders of the American West' as a preview of Zion and Grand Canyon [4]!" },
+          "googleMapsLink": "https://maps.app.goo.gl/j6fsQ1hGjVoDfkaQ9"
         }
       ],
       "afternoon": [
         { 
-          "time": "12:00 - 13:30", 
-          "text": { "zh": "享用凱薩皇宮 Bacchanal Buffet 豪華自助午餐", "en": "Lunch at Bacchanal Buffet in Caesars Palace" }, 
-          "type": "dining", 
-          "detail": { "zh": "拉斯維加斯排行第一的自助餐，多達 500 種跨國界精緻料理與海鮮。建議提早預訂早午餐時段 [1, 2]。", "en": "Ranked #1 buffet in Vegas, featuring 500+ items and fresh seafood. Booking in advance is highly recommended [1, 2]." } 
+          "time": "12:00 - 14:00", 
+          "text": { "zh": "返回 ARIA 飯店享用泳池等公共設施與休息", "en": "Return to ARIA Resort to enjoy pool and hotel amenities" }, 
+          "type": "rest", 
+          "detail": { "zh": "利用中午避開烈日的時段，回飯店享用奢華泳池、熱水按摩池或水療中心，放鬆身心。", "en": "Escape the midday sun by returning to ARIA. Spend a relaxing afternoon enjoying the outdoor pools, hot tubs, or spa amenities." }
         },
         { 
-          "time": "13:30 - 16:30", 
-          "text": { "zh": "前往 AREA15 探索 Omega Mart 奇幻超市", "en": "Head to AREA15 to explore Omega Mart" }, 
-          "type": "sight", 
-          "detail": { "zh": "開車約 10 分鐘前往 AREA15。探索由藝術團體 Meow Wolf 打造的超現實奇幻超市，拉開冰箱門走入秘密通道與奇幻空間，極受 15 歲青少年喜愛 [5]！", "en": "Drive 10 mins to AREA15. Meow Wolf's Omega Mart is a massive interactive art puzzle disguised as a grocery store. Teens will love searching for hidden passages [5]!" } 
+          "time": "14:30 - 16:30", 
+          "text": { "zh": "享用凱薩皇宮 Bacchanal Buffet 豪華自助午餐", "en": "Lunch at Bacchanal Buffet in Caesars Palace" }, 
+          "type": "dining", 
+          "detail": { "zh": "拉斯維加斯排行第一的自助餐，多達 500 種跨國界精緻料理與海鮮。建議提早預訂早午餐時段 [1, 2]。", "en": "Ranked #1 buffet in Vegas, featuring 500+ items and fresh seafood. Booking in advance is highly recommended [1, 2]." },
+          "googleMapsLink": "https://maps.app.goo.gl/92ZAQkt7BjFYjR2b7"
         },
         { 
           "time": "16:30 - 17:30", 
           "text": { "zh": "返回 Aria 飯店稍作休息與梳洗", "en": "Return to ARIA to rest and freshen up" }, 
-          "type": "rest" 
+          "type": "rest",
+          "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=ARIA+Resort+%26+Casino+Las+Vegas"
         }
       ],
       "evening": [
         { 
           "time": "18:00 - 19:30", 
-          "text": { "zh": "在 Gordon Ramsay Hell's Kitchen 享用晚餐", "en": "Dinner at Gordon Ramsay's Hell's Kitchen" }, 
-          "type": "dining", 
-          "detail": { "zh": "「地獄廚房」實體餐廳。必點招牌威靈頓牛排、煎干貝與太妃糖布丁。**極度熱門，必須提早 1-2 個月訂位。**", "en": "Enjoy the signature Beef Wellington, seared scallops, and sticky toffee pudding. **Extremely popular; must book 1-2 months in advance.**" } 
-        },
-        { 
-          "time": "20:00 - 22:00", 
-          "text": { "zh": "前往金銀島酒店 (Treasure Island) 觀賞太陽馬戲團 Mystère 秀", "en": "Watch Cirque du Soleil's Mystère at Treasure Island" }, 
+          "text": { "zh": "前往美高梅大酒店 (MGM Grand) 觀賞太陽馬戲團 KÀ 秀", "en": "Watch Cirque du Soleil's KÀ at MGM Grand" }, 
           "type": "show", 
-          "detail": { "zh": "週一場次票價更親民。今日無長途行車疲累，能以最充沛的體力觀賞這場充滿高空特技、色彩繽紛與美式幽默的經典大秀 [3, 4]。", "en": "Monday tickets are cheaper. Without the fatigue of long drives, enjoy this vibrant, acrobatic classic show with high-energy humor [3, 4]." } 
+          "detail": { "zh": "太陽馬戲團最震撼的科技大秀，擁有 360 度旋轉懸空巨大舞台，融合武術與高空特技 [3, 4]。六點場時間非常合適，看完秀後可以悠閒散步或享用輕食。", "en": "Cirque du Soleil's most technologically advanced show, featuring a massive 360-degree rotating stage, martial arts, and acrobatics [3, 4]. The 6:00 PM show leaves the rest of the evening free." },
+          "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=KA+Theatre+MGM+Grand+Las+Vegas"
         }
       ]
     },
     "tips": {
-      "zh": "今日全程於賭城大道活動，建議穿著舒適步行鞋。Aria 門口即有輕軌電車或計程車，至各大景點非常方便。",
+      "zh": "今日全全程於賭城大道活動，建議穿著舒適步行鞋。Aria 門口即有輕軌電車或計程車，至各大景點非常方便。",
       "en": "Today is completely walking and Strip-based. Wear comfortable walking shoes. Aria has great connectivity via free trams, taxis, or rideshares."
     }
   },
   {
     "dayNumber": 3,
     "dayTitle": {
-      "zh": "7月7日 (週二) | 拉斯維加斯 ➔ 09:00 退房 ➔ 錫安國家公園健行 ➔ Springdale",
-      "en": "July 7 (Tue) | Las Vegas ➔ Checkout at 09:00 ➔ Zion Hiking ➔ Springdale"
+      "zh": "7月7日 (週二) | 拉斯維加斯 ➔ 10:00 退房 ➔ 錫安國家公園 E-Bike 騎行 ➔ Springdale",
+      "en": "July 7 (Tue) | Las Vegas ➔ Checkout at 10:00 ➔ Zion E-Bike Ride ➔ Springdale"
     },
     "drivingRoute": {
       "zh": "ARIA Resort & Casino ➔ Zion SpringHill Suites",
@@ -236,66 +237,72 @@ const itineraryData = [
     "itinerary": {
       "morning": [
         { 
-          "time": "08:30 - 10:00", 
-          "text": { "zh": "悠閒起床並享用飯店早餐", "en": "Wake up leisurely and have breakfast" }, 
-          "type": "dining" 
-        },
-        { 
-          "time": "10:00 - 11:00", 
-          "text": { "zh": "整理行李，辦理退房準備出發", "en": "Pack luggage, check out and prepare to depart" }, 
+          "time": "08:00 - 10:00", 
+          "text": { "zh": "不吃早餐，專心打包行李，於 10:00 辦理退房", "en": "Focus on packing luggage, check out at 10:00 (no breakfast)" }, 
           "type": "hotel", 
-          "detail": { "zh": "辦理 Aria 退房，驅車前往猶他州錫安國家公園 [3]。", "en": "Check out from ARIA, pack your car and set out to Zion National Park, Utah [3]." } 
+          "detail": { "zh": "整理裝備與大行李，辦理 Aria 退房，準備出發。", "en": "Pack all belongings, check out of ARIA, and prepare to depart." }
         },
         { 
-          "time": "11:00 - 13:30", 
+          "time": "10:00 - 12:30", 
           "text": { "zh": "驅車直奔錫安國家公園 (Springdale)", "en": "Drive straight to Springdale (Zion National Park)" }, 
           "type": "drive", 
-          "detail": { "zh": "行駛約 2.5 小時。注意時差：猶他州比內華達州快一小時，抵達時為當地時間下午 14:30 [3]。", "en": "Drive through NV/AZ into Utah (~2.5 hrs). Note the time zone change: Utah is 1 hour ahead, so you will arrive at 14:30 local time [3]." } 
+          "detail": { "zh": "行駛約 2.5 小時。注意時差：猶他州比內華達州快一小時，抵達時為當地時間下午 13:30 [3]。", "en": "Drive through NV/AZ into Utah (~2.5 hrs). Note the time zone change: Utah is 1 hour ahead, so you will arrive at 13:30 local time [3]." }
         }
       ],
       "afternoon": [
-        { 
-          "time": "14:30 - 15:30", 
-          "text": { "zh": "抵達 Springdale 享用遲午餐", "en": "Arrive in Springdale and enjoy a late lunch" }, 
-          "type": "dining", 
-          "detail": { "zh": "推薦：Oscar's Cafe，享用大份量美式或墨西哥融合料理 [3, 4]。", "en": "Recommended: Oscar's Cafe, famous for large portions of Tex-Mex, burgers, and salads [3, 4]." } 
+        {
+          "time": "13:30 - 14:00",
+          "text": { "zh": "抵達 Springdale 並至 SpringHill Suites 辦理入住與寄放行李", "en": "Arrive in Springdale, check in and drop luggage at SpringHill Suites" },
+          "type": "hotel",
+          "detail": { "zh": "先至飯店卸下大行李，稍作整備再出發。", "en": "Drop off heavy luggage at the hotel and prepare for the afternoon." },
+          "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=SpringHill+Suites+by+Marriott+Springdale+Zion+National+Park"
         },
         { 
-          "time": "15:30 - 18:30", 
-          "text": { "zh": "租借電動自行車入園，挑戰水上徒步路線 The Narrows", "en": "Rent E-Bikes and hike the iconic water trail The Narrows" }, 
+          "time": "14:00 - 15:00", 
+          "text": { "zh": "享用午餐", "en": "Enjoy lunch" }, 
+          "type": "dining", 
+          "detail": { "zh": "推薦：Oscar's Cafe，享用大份量美式或墨西哥融合料理 [3, 4]。", "en": "Recommended: Oscar's Cafe, famous for large portions of Tex-Mex, burgers, and salads [3, 4]." },
+          "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Oscar's+Cafe+Springdale+UT"
+        },
+        { 
+          "time": "15:00 - 17:00", 
+          "text": { "zh": "租借電動自行車，沿景觀大道騎行至 Temple of Sinawava 折返", "en": "Rent E-Bikes and ride along Scenic Drive to Temple of Sinawava and back" }, 
           "type": "sight", 
-          "detail": { "zh": "租借 E-Bike 探索錫安國家公園。E-Bike 能跳過接駁巴士的排隊人龍，直奔 The Narrows 挑戰涉水徒步 [3, 4]。", "en": "Renting E-Bikes allows you to bypass shuttle lines entirely and head straight to The Narrows for wading hiking [3, 4]." } 
+          "detail": { "zh": "租借 E-Bike 沿景觀大道騎行，沿途欣賞錫安峽谷的紅岩風光。抵達 Temple of Sinawava 後直接折返（不進行 Narrows 涉水健行），省時又輕鬆。", "en": "Rent E-Bikes to cruise the Scenic Drive. Turn back at Temple of Sinawava without hiking in the river, saving time and energy." },
+          "googleMapsLink": "https://maps.app.goo.gl/g7o6X9H6LQjXsvQ17"
         }
       ],
       "evening": [
         { 
-          "time": "18:30 - 19:30", 
-          "text": { "zh": "入住鄰近公園的 SpringHill Suites 飯店並放鬆休息", "en": "Check in at SpringHill Suites near the park entrance and rest" }, 
-          "type": "hotel", 
-          "detail": { "zh": "辦理入住，放妥行李並稍微休息，享受大自然的紅岩群山環抱景緻 [3, 4]。", "en": "Check in and relax. Enjoy the pool and the stunning backdrop of red cliffs [3, 4]." } 
+          "time": "17:00 - 19:00", 
+          "text": { "zh": "返回 SpringHill Suites 飯店休息並放鬆", "en": "Return to SpringHill Suites hotel to rest and unwind" }, 
+          "type": "rest", 
+          "detail": { "zh": "在飯店休息放鬆，享用泳池或欣賞大自然的紅岩群山環抱景緻 [3, 4]。", "en": "Relax at the hotel, enjoy the pool, and soak in the stunning red cliff backdrop [3, 4]." },
+          "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=SpringHill+Suites+by+Marriott+Springdale+Zion+National+Park"
         },
         { 
-          "time": "19:30 - 21:00", 
+          "time": "19:00 - 20:30", 
           "text": { "zh": "享用美味晚餐", "en": "Enjoy a delicious dinner" }, 
           "type": "dining", 
-          "detail": { "zh": "推薦：Bit & Spur Restaurant 享用美西南料理或當地精緻餐酒 [3, 4]。", "en": "Recommended: Bit & Spur Restaurant for Southwestern dining and creative dishes [3, 4]." } 
+          "detail": { "zh": "推薦：Bit & Spur Restaurant 享用美西南料理或當地精緻餐酒 [3, 4]。", "en": "Recommended: Bit & Spur Restaurant for Southwestern dining and creative dishes [3, 4]." },
+          "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Bit+%26+Spur+Restaurant+Springdale+UT"
         }
       ]
     },
     "tips": {
-      "zh": "時差提醒：進入猶他州時手錶會變快 1 小時！下午挑戰 The Narrows 涉水，水溫可能較涼，建議租借涉水防滑鞋。今天只住一晚，請在退房前整理好大行李。",
-      "en": "Time Zone Warning: Entering Utah shifts time forward by 1 hour! Hikers in The Narrows should rent wading boots/socks for safety. This is a 1-night stay, so keep your luggage packed."
+      "zh": "時差提醒：進入猶他州時手錶會變快 1 小時！下午騎乘 E-Bike 沿景觀大道欣賞紅岩景致，不進行涉水健行，輕鬆且安全。今天只住一晚，請在退房前整理好大行李。",
+      "en": "Time Zone Warning: Entering Utah shifts time forward by 1 hour! Enjoy a relaxing E-Bike ride down Scenic Drive this afternoon without wading in the river. This is a 1-night stay, so keep your luggage packed."
     }
   },
   {
     "dayNumber": 4,
     "dayTitle": {
-      "zh": "7月8日 (週三) | Springdale ➔ 08:30 退房 ➔ 卡納布 UTV 越野 ➔ 佩吉 (Page)",
-      "en": "July 8 (Wed) | Springdale ➔ Checkout at 08:30 ➔ Kanab UTV ➔ Page"
+      "zh": "7月8日 (週三) | Springdale ➔ 11:00 退房 ➔ 肯鎮午餐 ➔ 佩吉 (Page)",
+      "en": "July 8 (Wed) | Springdale ➔ Checkout at 11:00 ➔ Kanab Lunch ➔ Page"
     },
     "drivingRoute": {
-      "zh": "SpringHill Suites ➔ Belly of the Dragon ➔ Kanab (UTV) ➔ Page Hyatt Place",
-      "en": "SpringHill Suites ➔ Belly of the Dragon ➔ Kanab (UTV) ➔ Page Hyatt Place"
+      "zh": "SpringHill Suites ➔ Belly of the Dragon ➔ Kanab ➔ Page Hyatt Place",
+      "en": "SpringHill Suites ➔ Belly of the Dragon ➔ Kanab ➔ Page Hyatt Place"
     },
     "drivingStats": {
       "zh": "車程約 2.5 小時 (跨州獲得 1 小時時差紅利)",
@@ -306,72 +313,65 @@ const itineraryData = [
     "itinerary": {
       "morning": [
         { 
-          "time": "07:30 - 08:30", 
+          "time": "08:00 - 10:00", 
           "text": { "zh": "享用飯店早餐，補充足夠體力", "en": "Breakfast at the hotel to recharge" }, 
-          "type": "dining" 
+          "type": "dining"
         },
         { 
-          "time": "08:30 - 09:00", 
+          "time": "10:00 - 11:00", 
           "text": { "zh": "整理行李，辦理退房並將行李裝車", "en": "Pack luggage, check out and pack the car" }, 
-          "type": "hotel" 
+          "type": "hotel"
         },
         { 
-          "time": "09:00 - 10:00", 
-          "text": { "zh": "經 9 號景觀公路前往肯鎮 (Kanab)", "en": "Drive via Scenic Route 9 to Kanab" }, 
+          "time": "11:00 - 12:30", 
+          "text": { "zh": "前往肯鎮 (Kanab)，中途停留「龍之腹」拍照打卡", "en": "Drive to Kanab, stopping at Belly of the Dragon" }, 
           "type": "drive", 
-          "detail": { "zh": "途經紅石巨岩隧道與棋盤台地，景色如畫。", "en": "Pass through the Mt. Carmel tunnel and Checkerboard Mesa, stunning scenery." } 
-        },
-        { 
-          "time": "10:00 - 11:30", 
-          "text": { "zh": "途中停留奇特景點「龍之腹」並拍照打卡", "en": "Explore Belly of the Dragon cave tunnel" }, 
-          "type": "sight", 
-          "detail": { "zh": "Belly of the Dragon 是位於 89 號公路旁的天然岩石隧道，步行只需 10 分鐘，非常適合拍照 [5]。", "en": "A unique rock tunnel right off Hwy 89. A short 10-minute walk, great for quick photos [5]." } 
+          "detail": { "zh": "經 9 號景觀公路前行。中途在 89 號公路旁的天然岩石隧道「龍之腹」停留 30 分鐘拍照與歇腳。", "en": "Drive via Scenic Route 9. Stop at the unique rock tunnel Belly of the Dragon off Hwy 89 for 30 minutes of photos and walking." },
+          "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Belly+of+the+Dragon+Utah"
         }
       ],
       "afternoon": [
         { 
-          "time": "11:30 - 13:00", 
+          "time": "12:30 - 13:30", 
           "text": { "zh": "抵達肯鎮享用特色午餐", "en": "Arrive in Kanab and have lunch" }, 
           "type": "dining", 
-          "detail": { "zh": "推薦：Wild Thyme Bistro 有機料理或 Sego 創意輕食 [5]。", "en": "Recommended: Wild Thyme Bistro for organic eats or Sego for New American tapas [5]." } 
+          "detail": { "zh": "推薦：Wild Thyme Bistro 有機料理或 Sego 創意輕食 [5]。", "en": "Recommended: Wild Thyme Bistro for organic eats or Sego for New American tapas [5]." },
+          "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Wild+Thyme+Bistro+Kanab+UT"
         },
         { 
-          "time": "13:00 - 15:00", 
-          "text": { "zh": "參加 UTV 荒漠越野行程，探索 Peek-a-boo 峽谷", "en": "Join UTV off-road tour to Peek-a-boo canyon" }, 
-          "type": "sight", 
-          "detail": { "zh": "預訂 5/6 人座 UTV，穿越沙丘探訪 Peek-a-boo 秘境與 Great Chamber 紅岩沙穴，刺激度滿分，青少年最愛 [5]！", "en": "Charter a UTV off-road tour to Peek-a-boo slot canyon and the Great Chamber. A thrilling desert ride teens will love [5]!" } 
-        },
-        { 
-          "time": "15:00 - 16:30", 
-          "text": { "zh": "結束越野行程，開車前往佩吉市 (Page)", "en": "Finish UTV and drive to Page" }, 
+          "time": "13:30 - 15:00", 
+          "text": { "zh": "開車前往佩吉市 (Page)", "en": "Drive to Page" }, 
           "type": "drive", 
-          "detail": { "zh": "車程約 1.5 小時。進入亞利桑那州慢一小時，抵達 Page 時為當地時間下午 15:30 [5]。", "en": "About 1.5 hours of drive. Crossing into Arizona shifts time back by 1 hour, making arrival 15:30 Page time [5]." } 
+          "detail": { "zh": "車程約 1.5 小時。進入亞利桑那州慢一小時，抵達 Page 時為當地時間下午 14:00 [5]。", "en": "About 1.5 hours of drive. Crossing into Arizona shifts time back by 1 hour, making arrival 14:00 Page time [5]." }
+        },
+        { 
+          "time": "14:00 - 16:00", 
+          "text": { "zh": "抵達佩吉並入住 Hyatt Place 飯店放鬆休息", "en": "Arrive in Page and check in at Hyatt Place to rest" }, 
+          "type": "hotel", 
+          "detail": { "zh": "放妥行李，享受飯店設施（如戶外泳池、觀景露台）並稍作休息，準備前往 Lake Powell 碼頭 [5]。", "en": "Drop luggage, enjoy hotel amenities like the outdoor pool or scenic terrace, and prepare to head to the Lake Powell marina [5]." },
+          "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Hyatt+Place+Page+Lake+Powell"
         }
       ],
       "evening": [
         { 
-          "time": "15:30 - 16:30", 
-          "text": { "zh": "抵達佩奇並入住 Hyatt Place 飯店稍微休息", "en": "Arrive in Page and check in at Hyatt Place to rest" }, 
-          "type": "hotel", 
-          "detail": { "zh": "放妥行李洗把臉，整理裝備準備前往 Lake Powell 碼頭 [5]。", "en": "Drop luggage, freshen up, and prepare to head to the Lake Powell marina [5]." } 
-        },
-        { 
-          "time": "17:00 - 19:30", 
-          "text": { "zh": "預約 Lake Powell 包船/遊船，欣賞絕美湖畔日落", "en": "Private boat charter on Lake Powell for sunset view" }, 
+          "time": "16:00 - 18:00", 
+          "text": { "zh": "預約 Lake Powell 包船/遊船，欣賞絕美湖畔景緻", "en": "Private boat charter on Lake Powell to enjoy beautiful lake views" }, 
           "type": "sight", 
-          "detail": { "zh": "傍晚在鮑威爾湖包船，避開高溫氣溫舒適，欣賞金黃日落與水上峽谷絕景 [5]。", "en": "Chartering a private boat at sunset is a highlight. Enjoy the cool evening breeze and golden canyon reflections [5]." } 
+          "detail": { "zh": "在鮑威爾湖包船，避開高溫氣溫舒適，欣賞湖光山色與水上峽谷絕景 [5]。", "en": "Chartering a private boat is a highlight. Enjoy the cool evening breeze and stunning canyon reflections [5]." },
+          "googleMapsLink": "https://maps.app.goo.gl/sAyoddxZdSp2frVDA"
         },
         { 
-          "time": "19:30 - 21:00", 
-          "text": { "zh": "在 Big John's Texas BBQ 享用煙燻燒烤晚餐", "en": "Dinner at Big John's Texas BBQ" }, 
+          "time": "18:00 - 20:00", 
+          "text": { "zh": "在 Dara Sushi & Roll 享用日式晚餐", "en": "Dinner at Dara Sushi & Roll" }, 
           "type": "dining", 
-          "detail": { "zh": "戶外德州煙燻燒烤，牛胸肉軟嫩，有現場鄉村樂隊，氛圍極佳 [5]。", "en": "Enjoy outdoor Texas smoked brisket with a live country band and great atmosphere [5]." } 
+          "detail": { "zh": "位於 Page 鎮上的溫馨日式餐廳。提供新鮮的生魚片、特製創意壽司捲（如 Arizona Roll、Crunchy Roll）與 Poke 碗，深受當地人喜愛 [5]。", "en": "A cozy local Japanese spot in Page. Enjoy fresh sashimi, specialty sushi rolls (like Arizona Roll and Crunchy Roll), and poke bowls [5]." },
+          "googleMapsLink": "https://maps.app.goo.gl/HDRK3EJQkgZ9GHwu6"
         }
       ]
     },
     "tips": {
-      "zh": "時差提醒：進入亞利桑那州時手錶會慢 1 小時。UTV 越野行程風沙大，請攜帶墨鏡與防風面罩。Page 也是只住一晚，行李不用全部拿下來。",
-      "en": "Time Zone Warning: Entering Arizona shifts time back by 1 hour. UTV tours can be dusty, sunglasses and bandanas are recommended. Only 1 night in Page, keep unpacking to a minimum."
+      "zh": "時差提醒：進入亞利桑那州時手錶會慢 1 小時。下午抵達 Page 後有充裕的時間休息與享受飯店設施。Page 也是只住一晚，行李不用全部拿下來。",
+      "en": "Time Zone Warning: Entering Arizona shifts time back by 1 hour. Enjoy a relaxing afternoon at the hotel after arrival in Page. Only 1 night in Page, keep unpacking to a minimum."
     }
   },
   {
@@ -393,128 +393,131 @@ const itineraryData = [
     "itinerary": {
       "morning": [
         { 
-          "time": "07:30 - 08:30", 
-          "text": { "zh": "在飯店享用早餐", "en": "Have breakfast at the hotel" }, 
-          "type": "dining" 
+          "time": "08:00 - 10:00", 
+          "text": { "zh": "在飯店享用早餐，整理行李打包並辦理退房", "en": "Have breakfast, pack luggage and check out" }, 
+          "type": "hotel"
         },
         { 
-          "time": "08:30 - 09:00", 
-          "text": { "zh": "整理行李，辦理退房並將行李裝車", "en": "Pack luggage, check out and set off" }, 
-          "type": "hotel" 
-        },
-        { 
-          "time": "09:00 - 11:00", 
+          "time": "10:00 - 12:00", 
           "text": { "zh": "預約參觀 Antelope Canyon 羚羊峽谷導覽", "en": "Booked tour of Antelope Canyon" }, 
           "type": "sight", 
-          "detail": { "zh": "探訪世界著名的狹縫型峽谷，欣賞陽光直射入谷中的奇幻光影束 [5]。", "en": "Explore the world-famous slot canyon and view the magical sunbeams entering the canyon [5]." } 
+          "detail": { "zh": "探訪世界著名的狹縫型峽谷，欣賞陽光直射入谷中的奇幻光影束 [5]。", "en": "Explore the world-famous slot canyon and view the magical sunbeams entering the canyon [5]." },
+          "googleMapsLink": "https://maps.app.goo.gl/T8zjENmdE9aCxJ6V6"
         },
         { 
-          "time": "11:00 - 12:30", 
+          "time": "12:00 - 13:00", 
+          "text": { "zh": "佩吉快速外帶午餐並於車上享用", "en": "Quick takeout lunch in Page, eaten in the car" }, 
+          "type": "dining",
+          "detail": { "zh": "外帶 Page 鎮上的便當或速食，在車上享用以節省時間。", "en": "Grab a quick takeout in Page and eat in the car to save time." }
+        },
+        { 
+          "time": "13:00 - 14:00", 
           "text": { "zh": "前往 Horseshoe Bend 馬蹄灣，賞壯麗景緻", "en": "Visit Horseshoe Bend" }, 
           "type": "sight", 
-          "detail": { "zh": "觀賞科羅拉多河 270 度大迴轉的震撼奇景 [5]。", "en": "View the Colorado River's spectacular 270-degree bend from the rim [5]." } 
+          "detail": { "zh": "觀賞科羅拉多河 270 度大迴轉的震撼奇景 [5]。", "en": "View the Colorado River's spectacular 270-degree bend from the rim [5]." },
+          "googleMapsLink": "https://maps.app.goo.gl/fn3YFhV1jsQsXe7JA"
         }
       ],
       "afternoon": [
         { 
-          "time": "12:30 - 14:30", 
-          "text": { "zh": "在 Page 快速午餐，驅車前往大峽谷國家公園", "en": "Quick lunch in Page and drive to Grand Canyon National Park" }, 
+          "time": "14:00 - 16:00", 
+          "text": { "zh": "驅車前往大峽谷國家公園", "en": "Drive to Grand Canyon National Park" }, 
           "type": "drive",
           "detail": { "zh": "車程約 2 小時。沿途風光秀麗，朝大峽谷南緣前進。", "en": "About 2 hours drive. Head towards the South Rim of the Grand Canyon." }
         },
         { 
-          "time": "14:30 - 16:30", 
+          "time": "16:00 - 17:00", 
           "text": { "zh": "參觀大峽谷馬瑟角與主要觀景點", "en": "Visit Grand Canyon Mather Point & viewpoints" }, 
           "type": "sight", 
-          "detail": { "zh": "在大峽谷國家公園內自由散步，觀賞氣勢磅礴的峽谷斷崖與大自然鬼斧神工 [106, 107]。", "en": "Stroll along the rim trail, take photos at Mather Point and enjoy the breathtaking geological wonder [106, 107]." } 
+          "detail": { "zh": "在大峽谷國家公園內散步，觀賞氣勢磅礴的峽谷斷崖與大自然鬼斧神工 [106, 107]。", "en": "Stroll along the rim trail, take photos at Mather Point and enjoy the breathtaking geological wonder [106, 107]." },
+          "googleMapsLink": "https://maps.app.goo.gl/UpDY9tJ4gVBnKmUs5"
         },
         { 
-          "time": "16:30 - 19:00", 
+          "time": "17:00 - 19:30", 
           "text": { "zh": "沿著歷史 66 號公路驅車前往金曼 (Kingman)", "en": "Drive via Historic Route 66 to Kingman" }, 
           "type": "drive", 
-          "detail": { "zh": "車程約 2.5 小時。路途平直，沿途盡享美西荒野與復古小鎮風情 [103]。", "en": "About 2.5 hours of driving. Cruise through historic towns and wide open flats [103]." } 
+          "detail": { "zh": "車程約 2.5 小時。路途平直，沿途盡享美西荒野與復古小鎮風情 [103]。", "en": "About 2.5 hours of driving. Cruise through historic towns and wide open flats [103]." }
         }
       ],
       "evening": [
         { 
-          "time": "19:00 - 19:30", 
-          "text": { "zh": "抵達金曼並入住 66 號公路主題旅館", "en": "Check in at Route 66 Motel in Kingman" }, 
+          "time": "19:30 - 20:00", 
+          "text": { "zh": "抵達金曼並入住 SpringHill Suites 飯店", "en": "Check in at SpringHill Suites by Marriott Kingman Route 66" }, 
           "type": "hotel", 
-          "detail": { "zh": "辦理入住，體驗經典美式 Motel 霓虹燈與復古文化 [102, 103]。", "en": "Check in and experience the retro neon diner vibe of Route 66 [102, 103]." } 
+          "detail": { "zh": "辦理入住，在舒適的客房放鬆身心，享受現代化飯店設施與舒適的大床。", "en": "Check in and relax in comfortable rooms, enjoying modern amenities and Marriott quality service." },
+          "googleMapsLink": "https://maps.app.goo.gl/pwPF5LcoT3PJn87Z6"
         },
         { 
-          "time": "19:30 - 21:00", 
-          "text": { "zh": "享用經典美式公路晚餐", "en": "Dinner at Retro 1950s Diner" }, 
+          "time": "20:00 - 21:00", 
+          "text": { "zh": "在 Denny's 享用美式簡易晚餐", "en": "Dinner at Denny's" }, 
           "type": "dining", 
-          "detail": { "zh": "推薦：前往 Retro 1950s Diner，享用大漢堡、薯條與招牌濃郁奶昔 [109, 110]。", "en": "Recommended: local diners for burgers, fries, and thick shakes next to a vintage jukebox [109, 110]." } 
+          "detail": { "zh": "在經典的 24 小時美式家庭餐廳 Denny's 享用簡易晚餐（如漢堡、三明治、美式煎餅或開胃拼盤）。", "en": "Enjoy a classic diner dinner at Denny's (burgers, sandwiches, pancakes, or shakes)." },
+          "googleMapsLink": "https://maps.app.goo.gl/GDCdRERfbd5UQyoTA"
         }
       ]
     },
     "tips": {
-      "zh": "今日行程較長，大約有 5 小時的行車路程。請在大峽谷或 Page 隨時補滿油箱。抵達 Kingman 後可以體驗經典的 66 號公路霓虹燈旅館。",
-      "en": "This is the longest driving day with ~5 hours total. Fill up the gas tank in Page or Grand Canyon. Enjoy the vintage neon retro vibes in Kingman tonight."
+      "zh": "今日行程較長，大約有 5 小時的行車路程。請在大峽谷或 Page 隨時補滿油箱。抵達 Kingman 後入住舒適的 SpringHill Suites 飯店休息。",
+      "en": "This is the longest driving day with ~5 hours total. Fill up the gas tank in Page or Grand Canyon. Check in and have a good rest at SpringHill Suites in Kingman tonight."
     }
   },
   {
     "dayNumber": 6,
     "dayTitle": {
-      "zh": "7月10日 (週五) | 金曼 ➔ 11:00 退房 ➔ 莫哈維沙漠中繼 ➔ 洛杉磯住家",
-      "en": "July 10 (Fri) | Kingman ➔ Checkout by 11:00 ➔ Mojave Rest ➔ Home"
+      "zh": "7月10日 (週五) | 金曼 ➔ 11:00 退房 ➔ 安大略奧特萊斯購物 ➔ 洛杉磯住家",
+      "en": "July 10 (Fri) | Kingman ➔ Checkout by 11:00 ➔ Ontario Mills Outlet Shopping ➔ Home"
     },
     "drivingRoute": {
-      "zh": "Kingman ➔ Los Angeles (23944 Francisco Way)",
-      "en": "Kingman ➔ Los Angeles (23944 Francisco Way)"
+      "zh": "Kingman ➔ Ontario Mills ➔ Los Angeles (23944 Francisco Way)",
+      "en": "Kingman ➔ Ontario Mills ➔ Los Angeles (23944 Francisco Way)"
     },
     "drivingStats": {
-      "zh": "總車程約 4.5 - 5 小時",
-      "en": "Total drive time ~4.5 - 5 hours"
+      "zh": "總車程約 5.5 小時 (中途停靠安大略購物中心)",
+      "en": "Total drive time ~5.5 hours (with stop at Ontario Mills)"
     },
-    "googleMapsLink": "https://www.google.com/maps/dir/Kingman/23944+Francisco+Way,+Valencia,+CA+91354",
-    "googleMapsEmbedUrl": "https://maps.google.com/maps?saddr=Kingman&daddr=23944+Francisco+Way,+Valencia,+CA+91354&output=embed",
+    "googleMapsLink": "https://www.google.com/maps/dir/Kingman,+AZ/Ontario+Mills,+1+Mills+Cir,+Ontario,+CA+91764/23944+Francisco+Way,+Valencia,+CA+91354",
+    "googleMapsEmbedUrl": "https://maps.google.com/maps?saddr=Kingman,+AZ&daddr=Ontario+Mills,+1+Mills+Cir,+Ontario,+CA+91764+to:23944+Francisco+Way,+Valencia,+CA+91354&output=embed",
     "itinerary": {
       "morning": [
         { 
-          "time": "08:00 - 10:00", 
-          "text": { "zh": "悠閒起床，享用美式早午餐與參觀火車博物館", "en": "Wake up late, enjoy brunch and visit the locomotive museum" }, 
-          "type": "dining",
-          "detail": { "zh": "可以在金曼歷史街區漫步，與經典 Route 66 霓虹標誌合影 [110]。", "en": "Stroll in downtown Kingman and snap photos with the vintage road signs [110]." }
-        },
-        { 
-          "time": "10:00 - 11:00", 
-          "text": { "zh": "整理行李，辦理退房準備出發", "en": "Pack luggage, check out and prepare to depart" }, 
-          "type": "hotel" 
+          "time": "08:00 - 11:00", 
+          "text": { "zh": "在飯店享用早餐，整理行李打包並辦理退房", "en": "Have breakfast, pack luggage and check out" }, 
+          "type": "hotel"
         }
       ],
       "afternoon": [
         { 
-          "time": "11:00 - 13:30", 
-          "text": { "zh": "踏上返回洛杉磯的自駕返程", "en": "Start the drive back to Los Angeles" }, 
+          "time": "11:00 - 15:00", 
+          "text": { "zh": "驅車直奔安大略奧特萊斯 (Ontario Mills)", "en": "Drive straight to Ontario Mills Outlet" }, 
           "type": "drive", 
-          "detail": { "zh": "行經莫哈維沙漠 (Mojave Desert)，穿過加州邊界。", "en": "Drive through Mojave Desert and cross the California border." } 
+          "detail": { "zh": "行經莫哈維沙漠，橫跨加州邊界，直奔安大略。車程約 4 小時。", "en": "Drive through Mojave Desert and cross the California border straight to Ontario. Drive time is about 4 hours." },
+          "googleMapsLink": "https://maps.app.goo.gl/tGGix2iUkb2eWGwQ6"
         },
         { 
-          "time": "13:30 - 14:30", 
-          "text": { "zh": "於 Barstow 停留休息並享用 In-N-Out 漢堡", "en": "Rest and lunch at Barstow In-N-Out" }, 
+          "time": "15:00 - 18:00", 
+          "text": { "zh": "在 Ontario Mills 購物並享用晚餐", "en": "Shopping and dinner at Ontario Mills Outlet" }, 
           "type": "dining", 
-          "detail": { "zh": "公路自駕經典中繼站，吃漢堡加油並稍作休息，確保行車安全。", "en": "Classic road trip pitstop. Fuel up the car, grab burgers, and stretch legs for safety." } 
+          "detail": { "zh": "加州最大的室內奧特萊斯購物中心。您可以自由購物，並在美食廣場或餐廳享用早晚餐，避開傍晚洛杉磯的尖峰塞車潮。", "en": "California's largest indoor outlet mall. Enjoy shopping and grab an early dinner at the food court or restaurants to avoid peak LA rush hour traffic." },
+          "googleMapsLink": "https://maps.app.goo.gl/tGGix2iUkb2eWGwQ6"
         },
         { 
-          "time": "14:30 - 17:00", 
-          "text": { "zh": "完成最後路段，順利返回洛杉磯住家", "en": "Complete the drive back to Los Angeles" }, 
-          "type": "drive" 
+          "time": "18:00 - 19:00", 
+          "text": { "zh": "啟程返回洛杉磯住家", "en": "Drive back home to Los Angeles (Valencia)" }, 
+          "type": "drive", 
+          "detail": { "zh": "完成最後一段車程，避開尖峰交通，順利返家。車程約 1 小時。", "en": "Complete the final leg of the drive home, avoiding heavy traffic. Drive time is about 1 hour." }
         }
       ],
       "evening": [
         { 
-          "time": "17:00", 
+          "time": "19:00", 
           "text": { "zh": "返抵洛杉磯 Valencia 住家，結束豐富充實的六日旅行", "en": "Arrive home in Valencia, ending the 6-day trip" }, 
-          "type": "home" 
+          "type": "home"
         }
       ]
     },
     "tips": {
-      "zh": "週五下午南加進入市區路段可能會塞車，請預留充裕時間。莫哈維沙漠路段可能高溫，注意輪胎胎壓與水箱水溫。",
-      "en": "Traffic heading into SoCal on Friday afternoon can build up, plan accordingly. Ensure tire pressure and engine coolant are in check for the hot desert stretches."
+      "zh": "週五下午南加進入市區路段極易塞車，在 Ontario Mills 停留購物與享用晚餐可以有效避開 15:00-18:00 的尖峰塞車潮。",
+      "en": "Southern California traffic on Friday afternoon is notoriously heavy. Stopping at Ontario Mills for shopping and dinner helps you avoid the worst of the 15:00-18:00 rush hour traffic."
     }
   }
 ];
@@ -526,16 +529,14 @@ const itineraryData = [
 const bookingItems = [
   { id: 'costco_supplies', label: { "zh": "Costco 行前採購 (保冰桶、飲料、冰塊)", "en": "Costco Supplies (cooler, drinks, ice)" }, estimate: 120 },
   { id: 'las_vegas_hotel', label: { "zh": "Las Vegas 酒店預訂 (Aria 2晚 / 雙人房x2)", "en": "Las Vegas Hotel Booking (Aria 2 nights / 2 rooms)" }, estimate: 900 },
-  { id: 'hells_kitchen', label: { "zh": "地獄廚房 Hell's Kitchen 晚餐預約 (5人)", "en": "Hell's Kitchen Dinner Reservation (5 people)" }, estimate: 450 },
   { id: 'bacchanal_buffet', label: { "zh": "Caesars Bacchanal Buffet 預約 (5人)", "en": "Caesars Bacchanal Buffet Reservation (5 people)" }, estimate: 500 },
-  { id: 'mystere_tickets', label: { "zh": "太陽馬戲團 Mystère 門票預訂 (5人)", "en": "Cirque du Soleil Mystère Tickets (5 tickets)" }, estimate: 400 },
+  { id: 'ka_tickets', label: { "zh": "太陽馬戲團 KÀ 門票預訂 (5人)", "en": "Cirque du Soleil KÀ Tickets (5 tickets)" }, estimate: 500 },
   { id: 'zion_ebike', label: { "zh": "Zion 鋪路自行車租借預約 (5台 E-Bike)", "en": "Zion National Park E-Bike Rentals (5 bikes)" }, estimate: 400 },
   { id: 'springdale_hotel', label: { "zh": "Springdale 溫泉酒店預訂 (1晚 / 雙人房x2)", "en": "Springdale Hotel Booking (1 night / 2 rooms)" }, estimate: 450 },
-  { id: 'kanab_utv', label: { "zh": "Kanab UTV 荒漠越野行程預訂 (5人/6人座車)", "en": "Kanab UTV Off-road Tour Booking (5/6-seater)" }, estimate: 550 },
   { id: 'lake_powell_boat', label: { "zh": "Page 鮑威爾湖包船/遊船預訂 (5人)", "en": "Page Lake Powell Boat Charter Booking (5 people)" }, estimate: 450 },
   { id: 'page_hotel', label: { "zh": "Page 酒店預訂 (1晚 / 雙人房x2)", "en": "Page Hotel Booking (1 night / 2 rooms)" }, estimate: 360 },
   { id: 'national_park_pass', label: { "zh": "美西國家公園年票實體卡 (1張即可)", "en": "National Parks Annual Pass (1 physical card)" }, estimate: 80 },
-  { id: 'route66_hotel', label: { "zh": "Route 66 歷史小鎮酒店預訂 (1晚 / 雙人房x2)", "en": "Route 66 Motel Booking (1 night / 2 rooms)" }, estimate: 240 }
+  { id: 'route66_hotel', label: { "zh": "Kingman 飯店預訂 (SpringHill Suites 1晚 / 雙人房x2)", "en": "Kingman Hotel Booking (SpringHill Suites 1 night / 2 rooms)" }, estimate: 300 }
 ];
 
 // ==========================================================================
@@ -755,8 +756,18 @@ function renderDayDetails(dayNum) {
                 <div class="timeline-icon"><i class="fa-solid ${iconClass}"></i></div>
               </div>
               <div class="timeline-content-col">
-                <span class="timeline-time">${item.time}</span>
-                <span class="timeline-desc">${item.text[currentLang]}</span>
+                <div class="timeline-meta-row">
+                  <span class="timeline-time">${item.time}</span>
+                </div>
+                <div class="timeline-title-row">
+                  <span class="timeline-desc">${item.text[currentLang]}</span>
+                  ${item.googleMapsLink ? `
+                    <a href="${item.googleMapsLink}" target="_blank" class="timeline-nav-btn" title="${staticTranslations[currentLang].nav_btn_text}">
+                      <i class="fa-solid fa-location-arrow"></i>
+                      <span>${staticTranslations[currentLang].nav_btn_text}</span>
+                    </a>
+                  ` : ''}
+                </div>
                 ${item.detail ? `<div class="timeline-detail">${item.detail[currentLang]}</div>` : ''}
               </div>
             </li>
@@ -780,11 +791,6 @@ function renderDayDetails(dayNum) {
       <div class="drive-stat">
         <i class="fa-solid fa-gauge-high"></i>
         <span>${staticTranslations[currentLang].stats_label}<span class="drive-stat-val">${day.drivingStats[currentLang]}</span></span>
-      </div>
-      <div class="drive-stat">
-        <a href="${day.googleMapsLink}" target="_blank" class="drive-map-link">
-          <i class="fa-solid fa-location-arrow"></i> ${staticTranslations[currentLang].nav_btn_text}
-        </a>
       </div>
     </div>
 
