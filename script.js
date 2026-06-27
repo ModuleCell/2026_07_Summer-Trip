@@ -31,6 +31,7 @@ const staticTranslations = {
     period_empty: "無行程安排",
     route_label: "路線：",
     stats_label: "統計：",
+    weather_label: "天氣：",
     nav_btn_text: "開啟 Google Maps 導航",
     packing_count_text: "已完成"
   },
@@ -61,6 +62,7 @@ const staticTranslations = {
     period_empty: "No activities planned",
     route_label: "Route: ",
     stats_label: "Stats: ",
+    weather_label: "Weather: ",
     nav_btn_text: "Open Google Maps",
     packing_count_text: "Completed"
   }
@@ -80,6 +82,12 @@ const itineraryData = [
     "drivingStats": {
       "zh": "總車程約 4 - 4.5 小時",
       "en": "Total drive time ~4 - 4.5 hours"
+    },
+    "weather": {
+      "icon": "fa-sun",
+      "location": { "zh": "拉斯維加斯", "en": "Las Vegas" },
+      "summary": { "zh": "晴朗酷熱 ☀️ (極度乾燥)", "en": "Sunny & Hot ☀️ (Extremely Dry)" },
+      "temp": { "zh": "高 105°F (41°C) / 低 81°F (27°C)", "en": "High 105°F (41°C) / Low 81°F (27°C)" }
     },
     "googleMapsLink": "https://www.google.com/maps/dir/23944+Francisco+Way,+Valencia,+CA+91354/ARIA+Resort+%26+Casino",
     "googleMapsEmbedUrl": "https://maps.google.com/maps?saddr=23944+Francisco+Way,+Valencia,+CA+91354&daddr=ARIA+Resort+%26+Casino&output=embed",
@@ -163,6 +171,12 @@ const itineraryData = [
       "zh": "無需長途自駕，大道活動為主",
       "en": "No long drive, activities mainly around the Strip"
     },
+    "weather": {
+      "icon": "fa-temperature-high",
+      "location": { "zh": "拉斯維加斯", "en": "Las Vegas" },
+      "summary": { "zh": "烈日晴朗 ☀️ (午後宜安排室內活動)", "en": "Sunny & Very Hot ☀️ (Indoor Recommended)" },
+      "temp": { "zh": "高 106°F (41°C) / 低 82°F (28°C)", "en": "High 106°F (41°C) / Low 82°F (28°C)" }
+    },
     "googleMapsLink": "https://www.google.com/maps/dir/ARIA+Resort+%26+Casino/AREA15/ARIA+Resort+%26+Casino",
     "googleMapsEmbedUrl": "https://maps.google.com/maps?saddr=ARIA+Resort+%26+Casino&daddr=AREA15+to:ARIA+Resort+%26+Casino&output=embed",
     "itinerary": {
@@ -231,6 +245,12 @@ const itineraryData = [
     "drivingStats": {
       "zh": "車程估計約 2.5 小時 (時差損失 1 小時)",
       "en": "Drive time ~2.5 hours (lose 1 hour timezone difference)"
+    },
+    "weather": {
+      "icon": "fa-cloud-sun",
+      "location": { "zh": "錫安國家公園", "en": "Zion National Park" },
+      "summary": { "zh": "晴朗微風 🌤️ (峽谷高溫乾燥)", "en": "Sunny & Warm 🌤️ (Dry Canyon Air)" },
+      "temp": { "zh": "高 96°F (36°C) / 低 68°F (20°C)", "en": "High 96°F (36°C) / Low 68°F (20°C)" }
     },
     "googleMapsLink": "https://www.google.com/maps/dir/ARIA+Resort+%26+Casino/SpringHill+Suites+by+Marriott+Springdale+Zion+National+Park",
     "googleMapsEmbedUrl": "https://maps.google.com/maps?saddr=ARIA+Resort+%26+Casino&daddr=SpringHill+Suites+by+Marriott+Springdale+Zion+National+Park&output=embed",
@@ -307,6 +327,12 @@ const itineraryData = [
     "drivingStats": {
       "zh": "車程約 2.5 小時 (跨州獲得 1 小時時差紅利)",
       "en": "Drive time ~2.5 hours (gain 1 hour timezone difference)"
+    },
+    "weather": {
+      "icon": "fa-sun",
+      "location": { "zh": "佩吉 / 鮑威爾湖", "en": "Page / Lake Powell" },
+      "summary": { "zh": "晴朗無雲 ☀️ (湖畔晚風涼爽)", "en": "Sunny & Clear ☀️ (Pleasant Lake Breeze)" },
+      "temp": { "zh": "高 98°F (37°C) / 低 73°F (23°C)", "en": "High 98°F (37°C) / Low 73°F (23°C)" }
     },
     "googleMapsLink": "https://www.google.com/maps/dir/SpringHill+Suites+by+Marriott+Springdale+Zion+National+Park/Belly+of+the+Dragon/Kanab/Hyatt+Place+Page+Lake+Powell",
     "googleMapsEmbedUrl": "https://maps.google.com/maps?saddr=SpringHill+Suites+by+Marriott+Springdale+Zion+National+Park&daddr=Belly+of+the+Dragon+to:Kanab+to:Hyatt+Place+Page+Lake+Powell&output=embed",
@@ -387,6 +413,12 @@ const itineraryData = [
     "drivingStats": {
       "zh": "自駕行程約 5 小時 (今日最長路程，請輪流駕駛)",
       "en": "Drive time ~5 hours (longest driving day, please rotate drivers)"
+    },
+    "weather": {
+      "icon": "fa-cloud-sun-rain",
+      "location": { "zh": "大峽谷南緣", "en": "Grand Canyon South Rim" },
+      "summary": { "zh": "晴時多雲 ⛅ (大峽谷涼爽，留意午後雷陣雨)", "en": "Sunny with Clouds ⛅ (Cool Rim, Watch PM Showers)" },
+      "temp": { "zh": "峽谷高 85°F (29°C) / 低 55°F (13°C) | 金曼高 98°F (37°C)", "en": "Rim High 85°F (29°C) / Low 55°F (13°C) | Kingman High 98°F (37°C)" }
     },
     "googleMapsLink": "https://www.google.com/maps/dir/Hyatt+Place+Page+Lake+Powell/Antelope+Canyon/Horseshoe+Bend/Grand+Canyon+National+Park/Kingman",
     "googleMapsEmbedUrl": "https://maps.google.com/maps?saddr=Hyatt+Place+Page+Lake+Powell&daddr=Antelope+Canyon+to:Horseshoe+Bend+to:Grand+Canyon+National+Park+to:Kingman&output=embed",
@@ -474,6 +506,12 @@ const itineraryData = [
     "drivingStats": {
       "zh": "總車程約 5.5 小時 (中途停靠安大略購物中心)",
       "en": "Total drive time ~5.5 hours (with stop at Ontario Mills)"
+    },
+    "weather": {
+      "icon": "fa-sun",
+      "location": { "zh": "安大略 / 洛杉磯", "en": "Ontario / Los Angeles" },
+      "summary": { "zh": "晴朗溫和 ☀️ (南加州舒適氣候)", "en": "Sunny & Mild ☀️ (Pleasant SoCal Weather)" },
+      "temp": { "zh": "高 88°F (31°C) / 低 64°F (18°C)", "en": "High 88°F (31°C) / Low 64°F (18°C)" }
     },
     "googleMapsLink": "https://www.google.com/maps/dir/Kingman,+AZ/Ontario+Mills,+1+Mills+Cir,+Ontario,+CA+91764/23944+Francisco+Way,+Valencia,+CA+91354",
     "googleMapsEmbedUrl": "https://maps.google.com/maps?saddr=Kingman,+AZ&daddr=Ontario+Mills,+1+Mills+Cir,+Ontario,+CA+91764+to:23944+Francisco+Way,+Valencia,+CA+91354&output=embed",
@@ -792,6 +830,12 @@ function renderDayDetails(dayNum) {
         <i class="fa-solid fa-gauge-high"></i>
         <span>${staticTranslations[currentLang].stats_label}<span class="drive-stat-val">${day.drivingStats[currentLang]}</span></span>
       </div>
+      ${day.weather ? `
+      <div class="drive-stat weather-stat">
+        <i class="fa-solid ${day.weather.icon} weather-icon"></i>
+        <span>${staticTranslations[currentLang].weather_label}<span class="weather-loc">[${day.weather.location[currentLang]}]</span> <span class="drive-stat-val">${day.weather.summary[currentLang]}</span> <span class="weather-temp-badge">${day.weather.temp[currentLang]}</span></span>
+      </div>
+      ` : ''}
     </div>
 
     <div class="timeline">

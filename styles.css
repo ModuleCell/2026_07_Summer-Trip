@@ -464,6 +464,44 @@ body {
   font-family: 'Outfit', sans-serif;
 }
 
+/* Weather Stat Custom Styling */
+.weather-stat {
+  background: rgba(245, 158, 11, 0.08);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  padding: 6px 14px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.weather-stat:hover {
+  background: rgba(245, 158, 11, 0.15);
+  border-color: rgba(245, 158, 11, 0.4);
+  box-shadow: var(--shadow-amber-glow);
+}
+
+.weather-stat i.weather-icon {
+  color: var(--color-amber);
+  font-size: 1.15rem;
+}
+
+.weather-loc {
+  color: var(--color-amber);
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+.weather-temp-badge {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: 'Outfit', sans-serif;
+  margin-left: 6px;
+  letter-spacing: 0.02em;
+}
+
 .drive-map-link {
   background: rgba(0, 242, 254, 0.08);
   border: 1px solid rgba(0, 242, 254, 0.15);
