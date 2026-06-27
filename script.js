@@ -144,7 +144,7 @@ const itineraryData = [
           "googleMapsLink": "https://maps.app.goo.gl/sngKADDJD3MbF7ts8"
         },
         { 
-          "time": "20:00 - 21:30", 
+          "time": "20:00 - 22:00", 
           "text": { "zh": "漫步 Strip 大道，觀賞 Bellagio 音樂噴泉", "en": "Stroll along the Strip, watch Bellagio Fountains & Conservatory" }, 
           "type": "sight", 
           "detail": { "zh": "從 Aria 步行至 Bellagio 極近。可散步觀賞世界知名的水舞噴泉與室內溫室花園，享受賭城繁華夜景 [5]。", "en": "An easy walk from Aria to Bellagio. View the famous fountain show and the seasonal conservatory flower display [5]." },
