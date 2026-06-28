@@ -235,8 +235,12 @@ const itineraryData = [
   {
     "dayNumber": 3,
     "dayTitle": {
-      "zh": "7月7日 (週二) | 拉斯維加斯 ➔ 10:00 退房 ➔ 錫安國家公園 E-Bike 騎行 ➔ Springdale",
-      "en": "July 7 (Tue) | Las Vegas ➔ Checkout at 10:00 ➔ Zion E-Bike Ride ➔ Springdale"
+      "zh": "7月7日 (週二) | 拉斯維加斯 ➔ 10:00 退房 ➔ 錫安國家公園 E-Bike 騎行",
+      "en": "July 7 (Tue) | Las Vegas ➔ Checkout at 10:00 ➔ Zion E-Bike Ride"
+    },
+    "tabTitle": {
+      "zh": "7月7日 (週二) | 錫安國家公園",
+      "en": "July 7 (Tue) | Zion National Park"
     },
     "drivingRoute": {
       "zh": "ARIA Resort & Casino ➔ Zion SpringHill Suites",
@@ -731,18 +735,19 @@ function renderDayTabs() {
     btn.className = `day-tab-btn ${day.dayNumber === activeDay ? 'active' : ''}`;
     btn.id = `tab-day-${day.dayNumber}`;
     
-    const titleText = day.dayTitle[currentLang];
-    let shortTitle = titleText;
-    if (titleText.includes(' | ')) {
-      const parts = titleText.split(' | ');
-      shortTitle = parts[0] + ' | ' + parts[parts.length - 1].split(' ➔ ').slice(-1)[0].replace(/（.*）|\(.*\)/g, '').trim();
-    } else if (titleText.includes(' ➔ ')) {
-      const parts = titleText.split(' ➔ ');
-      const start = parts[0].replace(/（.*）|\(.*\)/g, '').trim();
-      let end = parts[parts.length - 1].replace(/（.*）|\(.*\)/g, '').trim();
-      shortTitle = `${start} ➔ ${end}`;
-    } else {
-      shortTitle = titleText.replace(/（.*）|\(.*\)/g, '').trim();
+    let shortTitle = day.tabTitle ? day.tabTitle[currentLang] : day.dayTitle[currentLang];
+    if (!day.tabTitle) {
+      if (shortTitle.includes(' | ')) {
+        const parts = shortTitle.split(' | ');
+        shortTitle = parts[0] + ' | ' + parts[parts.length - 1].split(' ➔ ').slice(-1)[0].replace(/（.*）|\(.*\)/g, '').trim();
+      } else if (shortTitle.includes(' ➔ ')) {
+        const parts = shortTitle.split(' ➔ ');
+        const start = parts[0].replace(/（.*）|\(.*\)/g, '').trim();
+        let end = parts[parts.length - 1].replace(/（.*）|\(.*\)/g, '').trim();
+        shortTitle = `${start} ➔ ${end}`;
+      } else {
+        shortTitle = shortTitle.replace(/（.*）|\(.*\)/g, '').trim();
+      }
     }
 
     btn.innerHTML = `
