@@ -75,13 +75,17 @@ const itineraryData = [
       "zh": "7月5日 (週日) | 洛杉磯 ➔ （中繼休息） ➔ 拉斯維加斯",
       "en": "July 5 (Sun) | Los Angeles ➔ (Midway Rest) ➔ Las Vegas"
     },
+    "tabTitle": {
+      "zh": "7月5日 (週日) | 拉斯維加斯",
+      "en": "July 5 (Sun) | Las Vegas"
+    },
     "drivingRoute": {
-      "zh": "Los Angeles (23944 Francisco Way) ➔ Las Vegas (ARIA Resort & Casino)",
-      "en": "Los Angeles (23944 Francisco Way) ➔ Las Vegas (ARIA Resort & Casino)"
+      "zh": "洛杉磯 (23944 Francisco Way) ➔ 巴斯托 Barstow (In-N-Out) ➔ 拉斯維加斯 (ARIA) ➔ Costco 採買",
+      "en": "Los Angeles (23944 Francisco Way) ➔ Barstow (In-N-Out) ➔ Las Vegas (ARIA) ➔ Costco Shopping"
     },
     "drivingStats": {
-      "zh": "總車程約 4 - 4.5 小時",
-      "en": "Total drive time ~4 - 4.5 hours"
+      "zh": "總車程約 4 - 4.5 小時 (約 270 英哩)",
+      "en": "Total drive time ~4 - 4.5 hours (~270 miles)"
     },
     "weather": {
       "icon": "fa-sun",
@@ -89,8 +93,8 @@ const itineraryData = [
       "summary": { "zh": "晴朗酷熱 ☀️ (極度乾燥)", "en": "Sunny & Hot ☀️ (Extremely Dry)" },
       "temp": { "zh": "高 105°F (41°C) / 低 81°F (27°C)", "en": "High 105°F (41°C) / Low 81°F (27°C)" }
     },
-    "googleMapsLink": "https://www.google.com/maps/dir/23944+Francisco+Way,+Valencia,+CA+91354/ARIA+Resort+%26+Casino",
-    "googleMapsEmbedUrl": "https://maps.google.com/maps?saddr=23944+Francisco+Way,+Valencia,+CA+91354&daddr=ARIA+Resort+%26+Casino&output=embed",
+    "googleMapsLink": "https://www.google.com/maps/dir/23944+Francisco+Way,+Valencia,+CA+91354/In-N-Out+Burger,+2821+E+Main+St,+Barstow,+CA+92311/ARIA+Resort+%26+Casino/Costco+Wholesale,+Marks+St,+Henderson,+NV?dirflg=d",
+    "googleMapsEmbedUrl": "https://maps.google.com/maps?saddr=23944+Francisco+Way,+Valencia,+CA+91354&daddr=ARIA+Resort+%26+Casino,+Las+Vegas,+NV&dirflg=d&output=embed",
     "itinerary": {
       "morning": [
         { 
@@ -153,8 +157,8 @@ const itineraryData = [
       ]
     },
     "tips": {
-      "zh": "週日是南加往拉斯維加斯方向路況最好的時間，今日自駕路況預期極佳。入住 Aria 後步行即可抵達大道精華區。",
-      "en": "Sunday morning is the best window for driving from SoCal to Vegas (as weekend visitors head back west). Aria is perfectly central; you can walk to many strip landmarks directly."
+      "zh": "週日是南加往拉斯維加斯方向路況最好的時間。⛽ <strong>加油建議 (Honda Odyssey)</strong>：抵達 Vegas 安排至 Costco 採買時，優先至 <strong>Costco Decatur 站</strong>（離 Aria 約 10 分鐘）加滿油，享全城最便宜油價並為後續行程備足燃料。",
+      "en": "Sunday morning is the best window for driving from SoCal to Vegas. ⛽ <strong>Gas Tip (Honda Odyssey)</strong>: When visiting Costco today, fill up at <strong>Costco Decatur</strong> (10 mins from Aria) for the cheapest gas before heading to Utah."
     }
   },
   {
@@ -163,13 +167,17 @@ const itineraryData = [
       "zh": "7月6日 (週一) | 拉斯維加斯全日自由行（續住 Aria 不退房）",
       "en": "July 6 (Mon) | Las Vegas Full Day (Stay at ARIA)"
     },
+    "tabTitle": {
+      "zh": "7月6日 (週一) | 拉斯維加斯",
+      "en": "July 6 (Mon) | Las Vegas"
+    },
     "drivingRoute": {
-      "zh": "ARIA Resort & Casino ➔ 大道周邊景點 ➔ ARIA Resort & Casino",
-      "en": "ARIA Resort & Casino ➔ Strip Attractions ➔ ARIA Resort & Casino"
+      "zh": "ARIA 渡假村 ➔ FlyOver 飛行影院 ➔ 凱薩皇宮 ➔ 美高梅大酒店 (KÀ) ➔ ARIA 渡假村",
+      "en": "ARIA Resort ➔ FlyOver Las Vegas ➔ Caesars Palace ➔ MGM Grand (KÀ) ➔ ARIA Resort"
     },
     "drivingStats": {
-      "zh": "無需長途自駕，大道活動為主",
-      "en": "No long drive, activities mainly around the Strip"
+      "zh": "無需長途自駕，大道活動為主 (約 15 英哩)",
+      "en": "No long drive, activities mainly around the Strip (~15 miles)"
     },
     "weather": {
       "icon": "fa-temperature-high",
@@ -177,8 +185,8 @@ const itineraryData = [
       "summary": { "zh": "烈日晴朗 ☀️ (午後宜安排室內活動)", "en": "Sunny & Very Hot ☀️ (Indoor Recommended)" },
       "temp": { "zh": "高 106°F (41°C) / 低 82°F (28°C)", "en": "High 106°F (41°C) / Low 82°F (28°C)" }
     },
-    "googleMapsLink": "https://www.google.com/maps/dir/ARIA+Resort+%26+Casino/AREA15/ARIA+Resort+%26+Casino",
-    "googleMapsEmbedUrl": "https://maps.google.com/maps?saddr=ARIA+Resort+%26+Casino&daddr=AREA15+to:ARIA+Resort+%26+Casino&output=embed",
+    "googleMapsLink": "https://www.google.com/maps/dir/ARIA+Resort+%26+Casino/FlyOver+Las+Vegas/Caesars+Palace/MGM+Grand/ARIA+Resort+%26+Casino?dirflg=d",
+    "googleMapsEmbedUrl": "https://maps.google.com/maps?saddr=ARIA+Resort+%26+Casino,+Las+Vegas,+NV&daddr=Caesars+Palace,+Las+Vegas,+NV&dirflg=d&output=embed",
     "itinerary": {
       "morning": [
         { 
@@ -235,20 +243,20 @@ const itineraryData = [
   {
     "dayNumber": 3,
     "dayTitle": {
-      "zh": "7月7日 (週二) | 拉斯維加斯 ➔ 10:00 退房 ➔ 錫安國家公園 E-Bike 騎行",
-      "en": "July 7 (Tue) | Las Vegas ➔ Checkout at 10:00 ➔ Zion E-Bike Ride"
+      "zh": "7月7日 (週二) | 拉斯維加斯 ➔ 11:00 退房 ➔ 錫安國家公園 E-Bike 騎行",
+      "en": "July 7 (Tue) | Las Vegas ➔ Checkout at 11:00 ➔ Zion E-Bike Ride"
     },
     "tabTitle": {
       "zh": "7月7日 (週二) | 錫安國家公園",
       "en": "July 7 (Tue) | Zion National Park"
     },
     "drivingRoute": {
-      "zh": "ARIA Resort & Casino ➔ Zion SpringHill Suites",
-      "en": "ARIA Resort & Casino ➔ Zion SpringHill Suites"
+      "zh": "ARIA 渡假村 ➔ Costco St. George 加油站 ➔ 史普林代爾 SpringHill Suites ➔ 錫安峽谷景觀大道 ➔ SpringHill Suites",
+      "en": "ARIA Resort ➔ Costco Gas St. George ➔ SpringHill Suites Springdale ➔ Zion Canyon Scenic Drive ➔ SpringHill Suites"
     },
     "drivingStats": {
-      "zh": "車程估計約 2.5 小時 (時差損失 1 小時)",
-      "en": "Drive time ~2.5 hours (lose 1 hour timezone difference)"
+      "zh": "車程估計約 2.5 小時 (約 165 英哩 / 時差損失 1 小時)",
+      "en": "Drive time ~2.5 hours (~165 miles / lose 1 hour timezone difference)"
     },
     "weather": {
       "icon": "fa-cloud-sun",
@@ -256,40 +264,46 @@ const itineraryData = [
       "summary": { "zh": "晴朗微風 🌤️ (峽谷高溫乾燥)", "en": "Sunny & Warm 🌤️ (Dry Canyon Air)" },
       "temp": { "zh": "高 96°F (36°C) / 低 68°F (20°C)", "en": "High 96°F (36°C) / Low 68°F (20°C)" }
     },
-    "googleMapsLink": "https://www.google.com/maps/dir/ARIA+Resort+%26+Casino/SpringHill+Suites+by+Marriott+Springdale+Zion+National+Park",
-    "googleMapsEmbedUrl": "https://maps.google.com/maps?saddr=ARIA+Resort+%26+Casino&daddr=SpringHill+Suites+by+Marriott+Springdale+Zion+National+Park&output=embed",
+    "googleMapsLink": "https://www.google.com/maps/dir/ARIA+Resort+%26+Casino/Costco+Gas+Station,+835+E+300+S,+St.+George,+UT+84770/SpringHill+Suites+by+Marriott+Springdale+Zion+National+Park/Zion+National+Park+Visitor+Center/SpringHill+Suites+by+Marriott+Springdale+Zion+National+Park?dirflg=d",
+    "googleMapsEmbedUrl": "https://maps.google.com/maps?saddr=ARIA+Resort+%26+Casino,+Las+Vegas,+NV&daddr=SpringHill+Suites+by+Marriott+Springdale+Zion+National+Park&dirflg=d&output=embed",
     "itinerary": {
       "morning": [
         { 
-          "time": "08:00 - 10:00", 
-          "text": { "zh": "不吃早餐，專心打包行李，於 10:00 辦理退房", "en": "Focus on packing luggage, check out at 10:00 (no breakfast)" }, 
+          "time": "09:00 - 11:00", 
+          "text": { "zh": "享用悠閒早餐與打包行李，於 11:00 辦理退房", "en": "Leisurely breakfast & packing luggage, check out at 11:00" }, 
           "type": "hotel", 
           "detail": { "zh": "整理裝備與大行李，辦理 Aria 退房，準備出發。", "en": "Pack all belongings, check out of ARIA, and prepare to depart." }
         },
         { 
-          "time": "10:00 - 12:30", 
-          "text": { "zh": "驅車直奔錫安國家公園 (Springdale)", "en": "Drive straight to Springdale (Zion National Park)" }, 
+          "time": "11:00 - 14:00", 
+          "text": { "zh": "驅車前往猶他州聖喬治 (St. George)", "en": "Drive to St. George, Utah" }, 
           "type": "drive", 
-          "detail": { "zh": "行駛約 2.5 小時。注意時差：猶他州比內華達州快一小時，抵達時為當地時間下午 13:30 [3]。", "en": "Drive through NV/AZ into Utah (~2.5 hrs). Note the time zone change: Utah is 1 hour ahead, so you will arrive at 13:30 local time [3]." }
+          "detail": { "zh": "行駛約 2 小時。注意時差：跨越州界進入猶他州時手錶快一小時，抵達 St. George 時為當地時間下午 14:00 [3]。", "en": "Drive ~2 hrs. Note time zone change: Utah is 1 hr ahead, arriving at 14:00 local time." }
         }
       ],
       "afternoon": [
         {
-          "time": "13:30 - 14:00",
-          "text": { "zh": "抵達 Springdale 並至 SpringHill Suites 辦理入住與寄放行李", "en": "Arrive in Springdale, check in and drop luggage at SpringHill Suites" },
+          "time": "14:00 - 14:30",
+          "text": { "zh": "於 Costco St. George 加油站加油並採買熟食簡餐", "en": "Gas stop and buy Costco takeout meal at St. George" },
+          "type": "dining",
+          "detail": { "zh": "於 Costco 加油站補滿油箱，並至熟食區購買牛肉捲、熱狗或披薩便當於車上/路上享用 [3] (替代定點餐廳)。", "en": "Fill up at Costco Gas Station and grab quick food (hot dogs, pizza, bake) to eat on the road." },
+          "googleMapsLink": "https://maps.app.goo.gl/6E4VJ2wPDYkPgChy9"
+        },
+        {
+          "time": "14:30 - 15:00",
+          "text": { "zh": "驅車前往錫安國家公園入口 (Springdale)", "en": "Drive to Springdale (Zion National Park entry)" },
+          "type": "drive",
+          "detail": { "zh": "由 St. George 繼續前行約 30-40 分鐘，抵達錫安國家公園門戶小鎮 Springdale。", "en": "Drive 30-40 minutes from St. George to Springdale at Zion's entrance." }
+        },
+        {
+          "time": "15:00 - 15:30",
+          "text": { "zh": "抵達 Springdale 並至 SpringHill Suites 辦理入住", "en": "Arrive in Springdale and check in at SpringHill Suites" },
           "type": "hotel",
-          "detail": { "zh": "先至飯店卸下大行李，稍作整備再出發。", "en": "Drop off heavy luggage at the hotel and prepare for the afternoon." },
+          "detail": { "zh": "辦理飯店入住，在房間稍作休息與整備後出發。", "en": "Check in at the hotel, unwind briefly and prepare to head out." },
           "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=SpringHill+Suites+by+Marriott+Springdale+Zion+National+Park"
         },
         { 
-          "time": "14:00 - 15:00", 
-          "text": { "zh": "享用午餐", "en": "Enjoy lunch" }, 
-          "type": "dining", 
-          "detail": { "zh": "推薦：Oscar's Cafe，享用大份量美式或墨西哥融合料理 [3, 4]。", "en": "Recommended: Oscar's Cafe, famous for large portions of Tex-Mex, burgers, and salads [3, 4]." },
-          "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Oscar's+Cafe+Springdale+UT"
-        },
-        { 
-          "time": "15:00 - 17:00", 
+          "time": "15:30 - 17:30", 
           "text": { "zh": "租借電動自行車，沿景觀大道騎行至 Temple of Sinawava 折返", "en": "Rent E-Bikes and ride along Scenic Drive to Temple of Sinawava and back" }, 
           "type": "sight", 
           "detail": { "zh": "租借 E-Bike 沿景觀大道騎行，沿途欣賞錫安峽谷的紅岩風光。抵達 Temple of Sinawava 後直接折返（不進行 Narrows 涉水健行），省時又輕鬆。", "en": "Rent E-Bikes to cruise the Scenic Drive. Turn back at Temple of Sinawava without hiking in the river, saving time and energy." },
@@ -298,8 +312,8 @@ const itineraryData = [
       ],
       "evening": [
         { 
-          "time": "17:00 - 19:00", 
-          "text": { "zh": "返回 SpringHill Suites 飯店休息並放鬆", "en": "Return to SpringHill Suites hotel to rest and unwind" }, 
+          "time": "17:30 - 19:00", 
+          "text": { "zh": "返回 SpringHill Suites 飯店休息與放鬆", "en": "Return to SpringHill Suites hotel to rest and unwind" }, 
           "type": "rest", 
           "detail": { "zh": "在飯店休息放鬆，享用泳池或欣賞大自然的紅岩群山環抱景緻 [3, 4]。", "en": "Relax at the hotel, enjoy the pool, and soak in the stunning red cliff backdrop [3, 4]." },
           "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=SpringHill+Suites+by+Marriott+Springdale+Zion+National+Park"
@@ -314,8 +328,8 @@ const itineraryData = [
       ]
     },
     "tips": {
-      "zh": "時差提醒：進入猶他州時手錶會變快 1 小時！下午騎乘 E-Bike 沿景觀大道欣賞紅岩景致，不進行涉水健行，輕鬆且安全。今天只住一晚，請在退房前整理好大行李。",
-      "en": "Time Zone Warning: Entering Utah shifts time forward by 1 hour! Enjoy a relaxing E-Bike ride down Scenic Drive this afternoon without wading in the river. This is a 1-night stay, so keep your luggage packed."
+      "zh": "時差提醒：進入猶他州時手錶會變快 1 小時！下午騎乘 E-Bike 沿景觀大道欣賞紅岩景致。⛽ <strong>加油備忘</strong>：若油量低於半桶，行經 I-15 進入猶他州前可順道於 <strong>Costco St. George 站</strong>（835 E 300 S, St. George, UT）補滿油，Springdale 鎮上油價較貴。",
+      "en": "Time Zone Warning: Entering Utah shifts time forward by 1 hour! Enjoy a relaxing E-Bike ride. ⛽ <strong>Gas Tip</strong>: If tank is low, stop at <strong>Costco St. George</strong> off I-15 before Springdale for cheaper gas."
     }
   },
   {
@@ -324,13 +338,17 @@ const itineraryData = [
       "zh": "7月8日 (週三) | Springdale ➔ 11:00 退房 ➔ 肯鎮午餐 ➔ 佩吉 (Page)",
       "en": "July 8 (Wed) | Springdale ➔ Checkout at 11:00 ➔ Kanab Lunch ➔ Page"
     },
+    "tabTitle": {
+      "zh": "7月8日 (週三) | 龍之腹 / 鮑威爾湖",
+      "en": "July 8 (Wed) | Belly of the Dragon / Lake Powell"
+    },
     "drivingRoute": {
-      "zh": "SpringHill Suites ➔ Belly of the Dragon ➔ Kanab ➔ Page Hyatt Place",
-      "en": "SpringHill Suites ➔ Belly of the Dragon ➔ Kanab ➔ Page Hyatt Place"
+      "zh": "SpringHill Suites ➔ 龍之腹 (Belly of the Dragon) ➔ 肯鎮 (Kanab) ➔ 佩吉 Hyatt Place ➔ 鮑威爾湖 ➔ Maverik 加油站",
+      "en": "SpringHill Suites ➔ Belly of the Dragon ➔ Kanab ➔ Hyatt Place Page ➔ Lake Powell ➔ Maverik Gas Station"
     },
     "drivingStats": {
-      "zh": "車程約 2.5 小時 (跨州獲得 1 小時時差紅利)",
-      "en": "Drive time ~2.5 hours (gain 1 hour timezone difference)"
+      "zh": "車程約 2.5 小時 (約 137 英哩 / 跨州獲得 1 小時時差紅利)",
+      "en": "Drive time ~2.5 hours (~137 miles / gain 1 hour timezone difference)"
     },
     "weather": {
       "icon": "fa-sun",
@@ -338,8 +356,8 @@ const itineraryData = [
       "summary": { "zh": "晴朗無雲 ☀️ (湖畔晚風涼爽)", "en": "Sunny & Clear ☀️ (Pleasant Lake Breeze)" },
       "temp": { "zh": "高 98°F (37°C) / 低 73°F (23°C)", "en": "High 98°F (37°C) / Low 73°F (23°C)" }
     },
-    "googleMapsLink": "https://www.google.com/maps/dir/SpringHill+Suites+by+Marriott+Springdale+Zion+National+Park/Belly+of+the+Dragon/Kanab/Hyatt+Place+Page+Lake+Powell",
-    "googleMapsEmbedUrl": "https://maps.google.com/maps?saddr=SpringHill+Suites+by+Marriott+Springdale+Zion+National+Park&daddr=Belly+of+the+Dragon+to:Kanab+to:Hyatt+Place+Page+Lake+Powell&output=embed",
+    "googleMapsLink": "https://www.google.com/maps/dir/SpringHill+Suites+by+Marriott+Springdale+Zion+National+Park/Belly+of+the+Dragon,+Kanab,+UT/Kanab,+UT/Hyatt+Place+Page+Lake+Powell/Lake+Powell/Maverik+Adventure's+First+Stop,+Lake+Powell+Blvd,+Page,+AZ?dirflg=d",
+    "googleMapsEmbedUrl": "https://maps.google.com/maps?saddr=SpringHill+Suites+by+Marriott+Springdale+Zion+National+Park&daddr=Hyatt+Place+Page+Lake+Powell&dirflg=d&output=embed",
     "itinerary": {
       "morning": [
         { 
@@ -390,8 +408,15 @@ const itineraryData = [
           "detail": { "zh": "在鮑威爾湖包船，避開高溫氣溫舒適，欣賞湖光山色與水上峽谷絕景 [5]。", "en": "Chartering a private boat is a highlight. Enjoy the cool evening breeze and stunning canyon reflections [5]." },
           "googleMapsLink": "https://maps.app.goo.gl/sAyoddxZdSp2frVDA"
         },
+        {
+          "time": "18:00 - 18:30",
+          "text": { "zh": "於 Page Maverik 加油站加油補給", "en": "Gas stop and refuel at Maverik Page" },
+          "type": "rest",
+          "detail": { "zh": "遊船結束回程時，順道至 Maverik 加油站 (Lake Powell Blvd) 補滿油箱 [5]，預先為明日穿越大峽谷長途自駕備足燃料。", "en": "Stop at Maverik Gas Station on Lake Powell Blvd after the boat tour to fill up for tomorrow's canyon drive." },
+          "googleMapsLink": "https://maps.app.goo.gl/eA5LqyNvSTDQGRGH7"
+        },
         { 
-          "time": "18:00 - 20:00", 
+          "time": "18:30 - 20:30", 
           "text": { "zh": "在 Dara Sushi & Roll 享用日式晚餐", "en": "Dinner at Dara Sushi & Roll" }, 
           "type": "dining", 
           "detail": { "zh": "位於 Page 鎮上的溫馨日式餐廳。提供新鮮的生魚片、特製創意壽司捲（如 Arizona Roll、Crunchy Roll）與 Poke 碗，深受當地人喜愛 [5]。", "en": "A cozy local Japanese spot in Page. Enjoy fresh sashimi, specialty sushi rolls (like Arizona Roll and Crunchy Roll), and poke bowls [5]." },
@@ -400,8 +425,8 @@ const itineraryData = [
       ]
     },
     "tips": {
-      "zh": "時差提醒：進入亞利桑那州時手錶會慢 1 小時。下午抵達 Page 後有充裕的時間休息與享受飯店設施。Page 也是只住一晚，行李不用全部拿下來。",
-      "en": "Time Zone Warning: Entering Arizona shifts time back by 1 hour. Enjoy a relaxing afternoon at the hotel after arrival in Page. Only 1 night in Page, keep unpacking to a minimum."
+      "zh": "時差提醒：進入亞利桑那州時手錶會慢 1 小時。Page 也是只住一晚。⛽ <strong>加油建議</strong>：Page 鎮上無 Costco，建議抵達 Page 後在鎮上 <strong>Maverik 或 Chevron</strong>（如 Lake Powell Blvd 站）加滿油，以備明日長途穿越大峽谷至 Kingman。",
+      "en": "Time Zone Warning: Entering Arizona shifts time back by 1 hour. ⛽ <strong>Gas Tip</strong>: Page has no Costco. Fill up at <strong>Maverik or Chevron</strong> in Page town today to prepare for tomorrow's long drive through Grand Canyon."
     }
   },
   {
@@ -410,13 +435,17 @@ const itineraryData = [
       "zh": "7月9日 (週四) | 佩吉 ➔ 羚羊谷 & 馬蹄灣 ➔ 大峽谷 ➔ 金曼 (Kingman)",
       "en": "July 9 (Thu) | Page ➔ Antelope Canyon & Horseshoe Bend ➔ Grand Canyon ➔ Kingman"
     },
+    "tabTitle": {
+      "zh": "7月9日 (週四) | 大峽谷國家公園",
+      "en": "July 9 (Thu) | Grand Canyon National Park"
+    },
     "drivingRoute": {
-      "zh": "Page Hyatt Place ➔ Antelope Canyon ➔ Horseshoe Bend ➔ Grand Canyon ➔ Kingman",
-      "en": "Page Hyatt Place ➔ Antelope Canyon ➔ Horseshoe Bend ➔ Grand Canyon ➔ Kingman"
+      "zh": "佩吉 Hyatt Place ➔ 羚羊峽谷 ➔ 馬蹄灣 ➔ 大峽谷馬瑟角 (Mather Point) ➔ 金曼 SpringHill Suites",
+      "en": "Hyatt Place Page ➔ Antelope Canyon ➔ Horseshoe Bend ➔ Grand Canyon Mather Point ➔ SpringHill Suites Kingman"
     },
     "drivingStats": {
-      "zh": "自駕行程約 5 小時 (今日最長路程，請輪流駕駛)",
-      "en": "Drive time ~5 hours (longest driving day, please rotate drivers)"
+      "zh": "自駕行程約 5 小時 (約 302 英哩 / 今日最長路程，請輪流駕駛)",
+      "en": "Drive time ~5 hours (~302 miles / longest driving day, please rotate drivers)"
     },
     "weather": {
       "icon": "fa-cloud-sun-rain",
@@ -424,8 +453,8 @@ const itineraryData = [
       "summary": { "zh": "晴時多雲 ⛅ (大峽谷涼爽，留意午後雷陣雨)", "en": "Sunny with Clouds ⛅ (Cool Rim, Watch PM Showers)" },
       "temp": { "zh": "峽谷高 85°F (29°C) / 低 55°F (13°C) | 金曼高 98°F (37°C)", "en": "Rim High 85°F (29°C) / Low 55°F (13°C) | Kingman High 98°F (37°C)" }
     },
-    "googleMapsLink": "https://www.google.com/maps/dir/Hyatt+Place+Page+Lake+Powell/Antelope+Canyon/Horseshoe+Bend/Grand+Canyon+National+Park/Kingman",
-    "googleMapsEmbedUrl": "https://maps.google.com/maps?saddr=Hyatt+Place+Page+Lake+Powell&daddr=Antelope+Canyon+to:Horseshoe+Bend+to:Grand+Canyon+National+Park+to:Kingman&output=embed",
+    "googleMapsLink": "https://www.google.com/maps/dir/Hyatt+Place+Page+Lake+Powell/Antelope+Canyon/Horseshoe+Bend/Mather+Point,+Grand+Canyon+Village,+AZ/SpringHill+Suites+by+Marriott+Kingman+Route+66?dirflg=d",
+    "googleMapsEmbedUrl": "https://maps.google.com/maps?saddr=Hyatt+Place+Page+Lake+Powell&daddr=SpringHill+Suites+by+Marriott+Kingman+Route+66&dirflg=d&output=embed",
     "itinerary": {
       "morning": [
         { 
@@ -493,8 +522,8 @@ const itineraryData = [
       ]
     },
     "tips": {
-      "zh": "今日行程較長，大約有 5 小時的行車路程。請在大峽谷或 Page 隨時補滿油箱。抵達 Kingman 後入住舒適的 SpringHill Suites 飯店休息。",
-      "en": "This is the longest driving day with ~5 hours total. Fill up the gas tank in Page or Grand Canyon. Check in and have a good rest at SpringHill Suites in Kingman tonight."
+      "zh": "今日行程較長（約 5 小時車程）。⛽ <strong>加油建議</strong>：出發前確保在 Page 已加滿油。晚上抵達 Kingman 鎮上無 Costco，可於 I-40 交流道旁大型連鎖加油站（如 <strong>Love's Travel Stop</strong> 或 <strong>Pilot</strong>）補充燃料。",
+      "en": "This is the longest driving day (~5 hours). ⛽ <strong>Gas Tip</strong>: Ensure full tank when leaving Page. In Kingman tonight, fuel up at major interstate stations like <strong>Love's</strong> or <strong>Pilot</strong>."
     }
   },
   {
@@ -503,13 +532,17 @@ const itineraryData = [
       "zh": "7月10日 (週五) | 金曼 ➔ 11:00 退房 ➔ 安大略奧特萊斯購物 ➔ 洛杉磯住家",
       "en": "July 10 (Fri) | Kingman ➔ Checkout by 11:00 ➔ Ontario Mills Outlet Shopping ➔ Home"
     },
+    "tabTitle": {
+      "zh": "7月10日 (週五) | Ontario Mill 購物",
+      "en": "July 10 (Fri) | Ontario Mill Shopping"
+    },
     "drivingRoute": {
-      "zh": "Kingman ➔ Ontario Mills ➔ Los Angeles (23944 Francisco Way)",
-      "en": "Kingman ➔ Ontario Mills ➔ Los Angeles (23944 Francisco Way)"
+      "zh": "金曼 SpringHill Suites ➔ 安大略奧特萊斯 (Ontario Mills) ➔ 洛杉磯住家 (23944 Francisco Way)",
+      "en": "SpringHill Suites Kingman ➔ Ontario Mills Outlet ➔ Los Angeles (23944 Francisco Way)"
     },
     "drivingStats": {
-      "zh": "總車程約 5.5 小時 (中途停靠安大略購物中心)",
-      "en": "Total drive time ~5.5 hours (with stop at Ontario Mills)"
+      "zh": "總車程約 5.5 小時 (約 333 英哩 / 中途停靠安大略購物中心)",
+      "en": "Total drive time ~5.5 hours (~333 miles / with stop at Ontario Mills)"
     },
     "weather": {
       "icon": "fa-sun",
@@ -517,8 +550,8 @@ const itineraryData = [
       "summary": { "zh": "晴朗溫和 ☀️ (南加州舒適氣候)", "en": "Sunny & Mild ☀️ (Pleasant SoCal Weather)" },
       "temp": { "zh": "高 88°F (31°C) / 低 64°F (18°C)", "en": "High 88°F (31°C) / Low 64°F (18°C)" }
     },
-    "googleMapsLink": "https://www.google.com/maps/dir/Kingman,+AZ/Ontario+Mills,+1+Mills+Cir,+Ontario,+CA+91764/23944+Francisco+Way,+Valencia,+CA+91354",
-    "googleMapsEmbedUrl": "https://maps.google.com/maps?saddr=Kingman,+AZ&daddr=Ontario+Mills,+1+Mills+Cir,+Ontario,+CA+91764+to:23944+Francisco+Way,+Valencia,+CA+91354&output=embed",
+    "googleMapsLink": "https://www.google.com/maps/dir/SpringHill+Suites+by+Marriott+Kingman+Route+66/Ontario+Mills,+1+Mills+Cir,+Ontario,+CA+91764/23944+Francisco+Way,+Valencia,+CA+91354?dirflg=d",
+    "googleMapsEmbedUrl": "https://maps.google.com/maps?saddr=SpringHill+Suites+by+Marriott+Kingman+Route+66&daddr=23944+Francisco+Way,+Valencia,+CA+91354&dirflg=d&output=embed",
     "itinerary": {
       "morning": [
         { 
@@ -558,8 +591,8 @@ const itineraryData = [
       ]
     },
     "tips": {
-      "zh": "週五下午南加進入市區路段極易塞車，在 Ontario Mills 停留購物與享用晚餐可以有效避開 15:00-18:00 的尖峰塞車潮。",
-      "en": "Southern California traffic on Friday afternoon is notoriously heavy. Stopping at Ontario Mills for shopping and dinner helps you avoid the worst of the 15:00-18:00 rush hour traffic."
+      "zh": "週五下午南加進入市區路段極易塞車。⛽ <strong>加油建議</strong>：橫跨沙漠抵達安大略後，優先前往離 Ontario Mills 僅 3 英哩的 <strong>Costco Gas Rancho Cucamonga / Ontario 站</strong>（1201 N Rochester Ave, Ontario, CA）加滿便宜加州油，再順暢返家。",
+      "en": "Friday afternoon SoCal traffic is heavy. ⛽ <strong>Gas Tip</strong>: Upon reaching Ontario, fill up at <strong>Costco Gas Rancho Cucamonga / Ontario</strong> (~3 mi from Ontario Mills) for cheap CA fuel before heading home."
     }
   }
 ];
@@ -575,6 +608,7 @@ const bookingItems = [
   { id: 'ka_tickets', label: { "zh": "太陽馬戲團 KÀ 門票預訂 (5人)", "en": "Cirque du Soleil KÀ Tickets (5 tickets)" }, estimate: 500 },
   { id: 'zion_ebike', label: { "zh": "Zion 鋪路自行車租借預約 (5台 E-Bike)", "en": "Zion National Park E-Bike Rentals (5 bikes)" }, estimate: 400 },
   { id: 'springdale_hotel', label: { "zh": "Springdale 溫泉酒店預訂 (1晚 / 雙人房x2)", "en": "Springdale Hotel Booking (1 night / 2 rooms)" }, estimate: 450 },
+  { id: 'antelope_canyon_tour', label: { "zh": "Page 羚羊峽谷導覽門票預訂 (5人)", "en": "Page Antelope Canyon Tour Booking (5 people)" }, estimate: 450 },
   { id: 'lake_powell_boat', label: { "zh": "Page 鮑威爾湖包船/遊船預訂 (5人)", "en": "Page Lake Powell Boat Charter Booking (5 people)" }, estimate: 450 },
   { id: 'page_hotel', label: { "zh": "Page 酒店預訂 (1晚 / 雙人房x2)", "en": "Page Hotel Booking (1 night / 2 rooms)" }, estimate: 360 },
   { id: 'national_park_pass', label: { "zh": "美西國家公園年票實體卡 (1張即可)", "en": "National Parks Annual Pass (1 physical card)" }, estimate: 80 },
@@ -675,16 +709,18 @@ function loadFromLocalStorage() {
   const savedBooking = localStorage.getItem('so_booking_status');
   if (savedBooking) {
     bookingStatus = JSON.parse(savedBooking);
-  } else {
-    bookingItems.forEach(item => { bookingStatus[item.id] = false; });
   }
+  bookingItems.forEach(item => {
+    if (bookingStatus[item.id] === undefined) bookingStatus[item.id] = false;
+  });
 
   const savedCosts = localStorage.getItem('so_booking_costs');
   if (savedCosts) {
     bookingCosts = JSON.parse(savedCosts);
-  } else {
-    bookingItems.forEach(item => { bookingCosts[item.id] = ''; });
   }
+  bookingItems.forEach(item => {
+    if (bookingCosts[item.id] === undefined) bookingCosts[item.id] = '';
+  });
 
   const savedPacking = localStorage.getItem('so_packing_status');
   if (savedPacking) {
@@ -1014,10 +1050,15 @@ function renderPackingList() {
 // ==========================================================================
 function updateExplorerMap() {
   const liveFrame = document.getElementById('liveMapIframe');
-  if (!liveFrame) return;
+  const fullMapBtn = document.getElementById('openFullMapBtn');
   const day = itineraryData.find(d => d.dayNumber === activeDay);
-  if (day && day.googleMapsEmbedUrl) {
-    liveFrame.src = day.googleMapsEmbedUrl;
+  if (day) {
+    if (liveFrame && day.googleMapsEmbedUrl) {
+      liveFrame.src = day.googleMapsEmbedUrl;
+    }
+    if (fullMapBtn && day.googleMapsLink) {
+      fullMapBtn.href = day.googleMapsLink;
+    }
   }
 }
 
