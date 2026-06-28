@@ -121,18 +121,18 @@ const itineraryData = [
           "detail": { "zh": "行駛剩餘車程，約 2 小時阻礙極小抵達拉斯維加斯。", "en": "Complete the remaining drive, about 2 hours with minimal traffic to Vegas." }
         },
         { 
-          "time": "15:00 - 16:00", 
-          "text": { "zh": "抵達拉斯維加斯，前往 Costco 採買物資", "en": "Arrive in Las Vegas and shop for supplies at Costco" }, 
-          "type": "rest", 
-          "detail": { "zh": "抵達後前往當地 Costco 購買保冰桶與冰塊，為接下來的公路旅行備妥隨車冰箱，並採購瓶裝水與零食乾糧 [1, 2]。", "en": "Buy a cooler box and ice bags at Costco to serve as a mobile fridge for the trip, plus bottled water and snacks [1, 2]." },
-          "googleMapsLink": "https://maps.app.goo.gl/HYor7VU8KiwJJWLu7"
-        },
-        { 
-          "time": "16:00 - 18:00", 
+          "time": "15:00 - 17:00", 
           "text": { "zh": "入住賭城大道正中心的 ARIA 渡假村並稍作休息", "en": "Check in at ARIA Resort & Casino on the Strip and rest" }, 
           "type": "hotel", 
-          "detail": { "zh": "配合下午 4:00 左右辦理入住。放妥行李並稍微休息，避開大道的擁擠噪音，享受高科技奢華客房。", "en": "Check in around 4:00 PM. Drop luggage and unwind in the high-tech luxury room away from strip traffic." },
+          "detail": { "zh": "抵達飯店辦理入住。放妥行李並稍微休息，避開大道的擁擠噪音，享受高科技奢華客房。", "en": "Check in at the hotel, drop luggage and unwind in the high-tech luxury room away from strip traffic." },
           "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=ARIA+Resort+%26+Casino+Las+Vegas"
+        },
+        { 
+          "time": "17:00 - 18:00", 
+          "text": { "zh": "前往當地 Costco 採買物資", "en": "Shop for supplies at local Costco" }, 
+          "type": "rest", 
+          "detail": { "zh": "休息後前往當地 Costco 購買保冰桶與冰塊，為接下來的公路旅行備妥隨車冰箱，並採購瓶裝水與零食乾糧 [1, 2]。", "en": "Head to local Costco to buy a cooler box and ice bags to serve as a mobile fridge for the trip, plus bottled water and snacks [1, 2]." },
+          "googleMapsLink": "https://maps.app.goo.gl/HYor7VU8KiwJJWLu7"
         }
       ],
       "evening": [
