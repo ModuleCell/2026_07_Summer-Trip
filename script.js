@@ -80,8 +80,8 @@ const itineraryData = [
       "en": "July 5 (Sun) | Las Vegas"
     },
     "drivingRoute": {
-      "zh": "洛杉磯 (23944 Francisco Way) ➔ 巴斯托 Barstow (In-N-Out) ➔ 拉斯維加斯 (ARIA) ➔ Costco 採買",
-      "en": "Los Angeles (23944 Francisco Way) ➔ Barstow (In-N-Out) ➔ Las Vegas (ARIA) ➔ Costco Shopping"
+      "zh": "洛杉磯 (23944 Francisco Way) ➔ 拉斯維加斯 (ARIA) ➔ Costco 採買",
+      "en": "Los Angeles (23944 Francisco Way) ➔ Las Vegas (ARIA) ➔ Costco Shopping"
     },
     "drivingStats": {
       "zh": "總車程約 4 - 4.5 小時 (約 270 英哩)",
@@ -93,7 +93,7 @@ const itineraryData = [
       "summary": { "zh": "晴朗酷熱 ☀️ (極度乾燥)", "en": "Sunny & Hot ☀️ (Extremely Dry)" },
       "temp": { "zh": "高 105°F (41°C) / 低 81°F (27°C)", "en": "High 105°F (41°C) / Low 81°F (27°C)" }
     },
-    "googleMapsLink": "https://www.google.com/maps/dir/23944+Francisco+Way,+Valencia,+CA+91354/In-N-Out+Burger,+2821+E+Main+St,+Barstow,+CA+92311/ARIA+Resort+%26+Casino/Costco+Wholesale,+Marks+St,+Henderson,+NV?dirflg=d",
+    "googleMapsLink": "https://www.google.com/maps/dir/23944+Francisco+Way,+Valencia,+CA+91354/ARIA+Resort+%26+Casino/Costco+Wholesale,+Marks+St,+Henderson,+NV?dirflg=d",
     "googleMapsEmbedUrl": "https://maps.google.com/maps?saddr=23944+Francisco+Way,+Valencia,+CA+91354&daddr=ARIA+Resort+%26+Casino,+Las+Vegas,+NV&dirflg=d&output=embed",
     "itinerary": {
       "morning": [
@@ -112,27 +112,20 @@ const itineraryData = [
       ],
       "afternoon": [
         { 
-          "time": "12:00 - 13:00", 
-          "text": { "zh": "於 Barstow 停留並享用 In-N-Out 漢堡", "en": "Stop at Barstow and enjoy In-N-Out burgers" }, 
-          "type": "dining", 
-          "detail": { "zh": "公路自駕經典中繼站。在 Barstow 享用必點的隱藏菜單 Double-Double Animal Style 搭配奶昔，並順便加油與休息。", "en": "A classic road trip stop. Enjoy the hidden menu Double-Double Animal Style with a milkshake, and gas up/stretch." },
-          "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=In-N-Out+Burger+Barstow+CA"
-        },
-        { 
-          "time": "13:00 - 15:00", 
-          "text": { "zh": "繼續上路前往拉斯維加斯", "en": "Continue driving to Las Vegas" }, 
+          "time": "12:00 - 14:00", 
+          "text": { "zh": "沿 15 號州際公路直達拉斯維加斯", "en": "Direct drive to Las Vegas via Interstate 15" }, 
           "type": "drive", 
-          "detail": { "zh": "行駛剩餘車程，約 2 小時阻礙極小抵達拉斯維加斯。", "en": "Complete the remaining drive, about 2 hours with minimal traffic to Vegas." }
+          "detail": { "zh": "行駛剩餘車程，約 2 小時順暢抵達拉斯維加斯。", "en": "Complete the remaining drive, about 2 hours with minimal traffic to Vegas." }
         },
         { 
-          "time": "15:00 - 17:00", 
+          "time": "14:00 - 16:00", 
           "text": { "zh": "入住賭城大道正中心的 ARIA 渡假村並稍作休息", "en": "Check in at ARIA Resort & Casino on the Strip and rest" }, 
           "type": "hotel", 
           "detail": { "zh": "抵達飯店辦理入住。放妥行李並稍微休息，避開大道的擁擠噪音，享受高科技奢華客房。", "en": "Check in at the hotel, drop luggage and unwind in the high-tech luxury room away from strip traffic." },
           "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=ARIA+Resort+%26+Casino+Las+Vegas"
         },
         { 
-          "time": "17:00 - 18:00", 
+          "time": "16:00 - 17:00", 
           "text": { "zh": "前往當地 Costco 採買物資", "en": "Shop for supplies at local Costco" }, 
           "type": "rest", 
           "detail": { "zh": "休息後前往當地 Costco 購買保冰桶與冰塊，為接下來的公路旅行備妥隨車冰箱，並採購瓶裝水與零食乾糧 [1, 2]。", "en": "Head to local Costco to buy a cooler box and ice bags to serve as a mobile fridge for the trip, plus bottled water and snacks [1, 2]." },
@@ -141,14 +134,14 @@ const itineraryData = [
       ],
       "evening": [
         { 
-          "time": "18:00 - 20:00", 
+          "time": "17:00 - 19:00", 
           "text": { "zh": "在百樂宮 (Bellagio) 內的 Jasmine 餐廳享用晚餐", "en": "Dinner at Jasmine (Bellagio Hotel & Casino)" }, 
           "type": "dining", 
           "detail": { "zh": "位於百樂宮 (Bellagio) 內。一邊享用精緻粵菜與港式海鮮，一邊近距離透過落地窗欣賞湖畔音樂噴泉水舞秀，氣氛極佳。", "en": "Located inside Bellagio. Enjoy refined Cantonese cuisine and seafood while taking in premier fountain views through floor-to-ceiling windows." },
           "googleMapsLink": "https://maps.app.goo.gl/hyRVDnLd8f2t4XwE8"
         },
         { 
-          "time": "20:00 - 22:00", 
+          "time": "19:00 - 21:00", 
           "text": { "zh": "漫步 Strip 大道，觀賞 Bellagio 音樂噴泉", "en": "Stroll along the Strip, watch Bellagio Fountains & Conservatory" }, 
           "type": "sight", 
           "detail": { "zh": "從 Aria 步行至 Bellagio 極近。可散步觀賞世界知名的水舞噴泉與室內溫室花園，享受賭城繁華夜景 [5]。", "en": "An easy walk from Aria to Bellagio. View the famous fountain show and the seasonal conservatory flower display [5]." },
@@ -451,25 +444,25 @@ const itineraryData = [
     "itinerary": {
       "morning": [
         { 
-          "time": "08:00 - 10:00", 
+          "time": "07:00 - 08:45", 
           "text": { "zh": "在飯店享用早餐，整理行李打包並辦理退房", "en": "Have breakfast, pack luggage and check out" }, 
           "type": "hotel"
         },
         { 
-          "time": "10:00 - 12:00", 
+          "time": "08:45 - 11:30", 
           "text": { "zh": "預約參觀 Antelope Canyon 羚羊峽谷導覽", "en": "Booked tour of Antelope Canyon" }, 
           "type": "sight", 
           "detail": { "zh": "探訪世界著名的狹縫型峽谷，欣賞陽光直射入谷中的奇幻光影束 [5]。", "en": "Explore the world-famous slot canyon and view the magical sunbeams entering the canyon [5]." },
-          "googleMapsLink": "https://maps.app.goo.gl/T8zjENmdE9aCxJ6V6"
+          "googleMapsLink": "https://maps.app.goo.gl/C9CsjLq33k6XUKyV9"
         },
         { 
-          "time": "12:00 - 13:00", 
+          "time": "11:30 - 12:00", 
           "text": { "zh": "佩吉快速外帶午餐並於車上享用", "en": "Quick takeout lunch in Page, eaten in the car" }, 
           "type": "dining",
           "detail": { "zh": "外帶 Page 鎮上的便當或速食，在車上享用以節省時間。", "en": "Grab a quick takeout in Page and eat in the car to save time." }
         },
         { 
-          "time": "13:00 - 14:00", 
+          "time": "12:00 - 13:00", 
           "text": { "zh": "前往 Horseshoe Bend 馬蹄灣，賞壯麗景緻", "en": "Visit Horseshoe Bend" }, 
           "type": "sight", 
           "detail": { "zh": "觀賞科羅拉多河 270 度大迴轉的震撼奇景 [5]。", "en": "View the Colorado River's spectacular 270-degree bend from the rim [5]." },
@@ -478,20 +471,20 @@ const itineraryData = [
       ],
       "afternoon": [
         { 
-          "time": "14:00 - 16:00", 
+          "time": "13:00 - 15:00", 
           "text": { "zh": "驅車前往大峽谷國家公園", "en": "Drive to Grand Canyon National Park" }, 
           "type": "drive",
           "detail": { "zh": "車程約 2 小時。沿途風光秀麗，朝大峽谷南緣前進。", "en": "About 2 hours drive. Head towards the South Rim of the Grand Canyon." }
         },
         { 
-          "time": "16:00 - 17:00", 
+          "time": "15:00 - 16:00", 
           "text": { "zh": "參觀大峽谷馬瑟角與主要觀景點", "en": "Visit Grand Canyon Mather Point & viewpoints" }, 
           "type": "sight", 
           "detail": { "zh": "在大峽谷國家公園內散步，觀賞氣勢磅礴的峽谷斷崖與大自然鬼斧神工 [106, 107]。", "en": "Stroll along the rim trail, take photos at Mather Point and enjoy the breathtaking geological wonder [106, 107]." },
           "googleMapsLink": "https://maps.app.goo.gl/UpDY9tJ4gVBnKmUs5"
         },
         { 
-          "time": "17:00 - 19:30", 
+          "time": "16:00 - 18:30", 
           "text": { "zh": "沿著歷史 66 號公路驅車前往金曼 (Kingman)", "en": "Drive via Historic Route 66 to Kingman" }, 
           "type": "drive", 
           "detail": { "zh": "車程約 2.5 小時。路途平直，沿途盡享美西荒野與復古小鎮風情 [103]。", "en": "About 2.5 hours of driving. Cruise through historic towns and wide open flats [103]." }
@@ -499,14 +492,14 @@ const itineraryData = [
       ],
       "evening": [
         { 
-          "time": "19:30 - 20:00", 
+          "time": "18:30 - 19:00", 
           "text": { "zh": "抵達金曼並入住 SpringHill Suites 飯店", "en": "Check in at SpringHill Suites by Marriott Kingman Route 66" }, 
           "type": "hotel", 
           "detail": { "zh": "辦理入住，在舒適的客房放鬆身心，享受現代化飯店設施與舒適的大床。", "en": "Check in and relax in comfortable rooms, enjoying modern amenities and Marriott quality service." },
           "googleMapsLink": "https://maps.app.goo.gl/pwPF5LcoT3PJn87Z6"
         },
         { 
-          "time": "20:00 - 21:00", 
+          "time": "19:00 - 20:00", 
           "text": { "zh": "在 Denny's 享用美式簡易晚餐", "en": "Dinner at Denny's" }, 
           "type": "dining", 
           "detail": { "zh": "在經典的 24 小時美式家庭餐廳 Denny's 享用簡易晚餐（如漢堡、三明治、美式煎餅或開胃拼盤）。", "en": "Enjoy a classic diner dinner at Denny's (burgers, sandwiches, pancakes, or shakes)." },
@@ -654,9 +647,9 @@ const packingData = {
     items: [
       { "zh": "強磁性車載手機架 (導航必備)", "en": "Magnetic car phone mount (for navigation)" },
       { "zh": "車載點煙器轉換器 & 充電線", "en": "Car charger adapter & USB cables" },
-      { "zh": "大容量防水行動電源", "en": "High-capacity power bank" },
       { "zh": "離線地圖下載 (Google Maps / AllTrails)", "en": "Offline maps download (Google Maps / AllTrails)" },
-      { "zh": "相機 / GoPro 運動相機", "en": "Camera / GoPro sports camera" }
+      { "zh": "相機 / GoPro 運動相機", "en": "Camera / GoPro sports camera" },
+      { "zh": "攜帶筆記型電腦", "en": "Laptop & Charger" }
     ]
   },
   daily: {
@@ -668,6 +661,14 @@ const packingData = {
       { "zh": "雙重備用信用卡", "en": "Backup credit cards" },
       { "zh": "Costco 會員卡", "en": "Costco membership card" },
       { "zh": "車載大包濕紙巾 & 乾洗手", "en": "Car wet wipes & hand sanitizer" }
+    ]
+  },
+  pets: {
+    title: { "zh": "寵物照護與備品", "en": "Pet Care & Supplies" },
+    icon: "fa-paw",
+    items: [
+      { "zh": "確認兩隻天竺鼠的照護對象", "en": "Confirm pet sitter for 2 guinea pigs" },
+      { "zh": "準備給天竺鼠的四天分生鮮蔬菜", "en": "Prepare 4 days of fresh vegetables for guinea pigs" }
     ]
   }
 };
