@@ -277,7 +277,26 @@ body {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
+}
+
+.tracker-group-header {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--color-cyan);
+  background: rgba(0, 242, 254, 0.08);
+  border-left: 3px solid var(--color-cyan);
+  padding: 6px 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  letter-spacing: 0.5px;
+}
+
+.tracker-group-header:first-child {
+  margin-top: 0;
 }
 
 .tracker-item {

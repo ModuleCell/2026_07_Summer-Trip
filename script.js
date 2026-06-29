@@ -172,8 +172,8 @@ const itineraryData = [
       "en": "July 6 (Mon) | Las Vegas"
     },
     "drivingRoute": {
-      "zh": "ARIA 渡假村 ➔ FlyOver 飛行影院 ➔ 凱薩皇宮 ➔ 美高梅大酒店 (KÀ) ➔ ARIA 渡假村",
-      "en": "ARIA Resort ➔ FlyOver Las Vegas ➔ Caesars Palace ➔ MGM Grand (KÀ) ➔ ARIA Resort"
+      "zh": "ARIA 渡假村 ➔ 百樂宮自助餐 (Bellagio) ➔ Play Playground 互動遊戲館 ➔ 永利渡假村 (Awakening) ➔ ARIA 渡假村",
+      "en": "ARIA Resort ➔ The Buffet at Bellagio ➔ Play Playground ➔ Wynn Las Vegas (Awakening) ➔ ARIA Resort"
     },
     "drivingStats": {
       "zh": "無需長途自駕，大道活動為主 (約 15 英哩)",
@@ -185,53 +185,46 @@ const itineraryData = [
       "summary": { "zh": "烈日晴朗 ☀️ (午後宜安排室內活動)", "en": "Sunny & Very Hot ☀️ (Indoor Recommended)" },
       "temp": { "zh": "高 106°F (41°C) / 低 82°F (28°C)", "en": "High 106°F (41°C) / Low 82°F (28°C)" }
     },
-    "googleMapsLink": "https://www.google.com/maps/dir/ARIA+Resort+%26+Casino/FlyOver+Las+Vegas/Caesars+Palace/MGM+Grand/ARIA+Resort+%26+Casino?dirflg=d",
-    "googleMapsEmbedUrl": "https://maps.google.com/maps?saddr=ARIA+Resort+%26+Casino,+Las+Vegas,+NV&daddr=Caesars+Palace,+Las+Vegas,+NV&dirflg=d&output=embed",
+    "googleMapsLink": "https://www.google.com/maps/dir/ARIA+Resort+%26+Casino/The+Buffet+at+Bellagio/Play+Playground+Las+Vegas/Wynn+Las+Vegas/ARIA+Resort+%26+Casino?dirflg=d",
+    "googleMapsEmbedUrl": "https://maps.google.com/maps?saddr=ARIA+Resort+%26+Casino,+Las+Vegas,+NV&daddr=The+Buffet+at+Bellagio,+Las+Vegas,+NV&dirflg=d&output=embed",
     "itinerary": {
       "morning": [
         { 
           "time": "08:00 - 10:00", 
-          "text": { "zh": "在 ARIA 渡假村內的 Proper Eats Food Hall 享用悠閒早餐", "en": "Leisurely breakfast at Proper Eats Food Hall (ARIA)" }, 
-          "type": "dining", 
-          "detail": { "zh": "位於 ARIA 渡假村內二樓。有多樣化的精緻美食選擇（如 Easy Donuts、Egghead 蛋沙拉三明治等），可隨意挑選喜愛的早餐項目。", "en": "Located on the second level of ARIA Resort. Features diverse upscale food concepts (like Easy Donuts, Egghead breakfast sandwiches, etc.) to suit everyone's tastes." },
-          "googleMapsLink": "https://maps.app.goo.gl/n4QNeh2snxqFD2aH7"
+          "text": { "zh": "悠閒起床洗漱、更衣與整理行裝", "en": "Wake up, freshen up, change clothes & get ready" }, 
+          "type": "rest", 
+          "detail": { "zh": "在 ARIA 飯店房間內悠閒起床、洗漱更衣與放鬆，準備 10:00 前往百樂宮享用豪華自助早午餐！", "en": "Leisurely morning at ARIA Resort. Wake up, freshen up, and get ready for brunch at Bellagio at 10:00 AM." }
         },
         { 
           "time": "10:00 - 12:00", 
-          "text": { "zh": "體驗 FlyOver Las Vegas 飛行影院", "en": "Experience FlyOver Las Vegas flying theater" }, 
-          "type": "sight", 
-          "detail": { "zh": "前往 Aria 對面的 Showcase Mall 體驗 FlyOver 4D 飛行影院，選擇《美西奇觀》影片，以懸空視角飛越接下來將去到的錫安與大峽谷，作為最佳公路旅行行前預告 [4]！", "en": "Walk across the street to Showcase Mall. FlyOver uses suspended motion seats and 4D effects. Choose 'Wonders of the American West' as a preview of Zion and Grand Canyon [4]!" },
-          "googleMapsLink": "https://maps.app.goo.gl/j6fsQ1hGjVoDfkaQ9"
+          "text": { "zh": "享用百樂宮大飯店 The Buffet at Bellagio 豪華自助早午餐", "en": "Brunch at The Buffet at Bellagio" }, 
+          "type": "dining", 
+          "detail": { "zh": "拉斯維加斯最經典且知名的頂級自助餐之一，提供極其豐富的跨國界精緻料理、現切烤肉、新鮮海鮮與精美甜點區。10點早午餐時段非常適合全家悠閒享受！", "en": "One of Las Vegas' most iconic buffets, offering an incredible spread of international dishes, live carving stations, seafood, and decadent desserts. The 10:00 AM brunch slot is perfect for a relaxed family feast." },
+          "googleMapsLink": "https://maps.app.goo.gl/dJpoforoYbWdan8y6"
         }
       ],
       "afternoon": [
         { 
-          "time": "12:00 - 14:00", 
-          "text": { "zh": "返回 ARIA 飯店享用泳池等公共設施與休息", "en": "Return to ARIA Resort to enjoy pool and hotel amenities" }, 
+          "time": "12:30 - 14:30", 
+          "text": { "zh": "體驗 Play Playground 沉浸式互動遊戲館", "en": "Experience Play Playground interactive gaming venue" }, 
+          "type": "sight", 
+          "detail": { "zh": "前往 Luxor (金字塔飯店) 內，佔地 15,000 平方英呎的真人大型互動遊戲館。沒有傳統 VR 或電玩，而是提供 20 多款大型實體闖關、記憶與團隊挑戰遊戲，帶來充滿活力與樂趣的沉浸式體驗！", "en": "Located inside Luxor Hotel & Casino, a 15,000 sq ft immersive social gaming venue. Features over 20 hands-on physical, puzzle, and memory games designed for real-world fun and friendly competition without VR or screens!" },
+          "googleMapsLink": "https://maps.app.goo.gl/v5wi5WL2zpqtEkyE9"
+        },
+        { 
+          "time": "15:00 - 17:15", 
+          "text": { "zh": "返回 ARIA 飯店享用泳池等公共設施與休息梳洗", "en": "Return to ARIA Resort to enjoy pool, rest and freshen up" }, 
           "type": "rest", 
-          "detail": { "zh": "利用中午避開烈日的時段，回飯店享用奢華泳池、熱水按摩池或水療中心，放鬆身心。", "en": "Escape the midday sun by returning to ARIA. Spend a relaxing afternoon enjoying the outdoor pools, hot tubs, or spa amenities." }
-        },
-        { 
-          "time": "14:30 - 16:30", 
-          "text": { "zh": "享用凱薩皇宮 Bacchanal Buffet 豪華自助午餐", "en": "Lunch at Bacchanal Buffet in Caesars Palace" }, 
-          "type": "dining", 
-          "detail": { "zh": "拉斯維加斯排行第一的自助餐，多達 500 種跨國界精緻料理與海鮮。建議提早預訂早午餐時段 [1, 2]。", "en": "Ranked #1 buffet in Vegas, featuring 500+ items and fresh seafood. Booking in advance is highly recommended [1, 2]." },
-          "googleMapsLink": "https://maps.app.goo.gl/92ZAQkt7BjFYjR2b7"
-        },
-        { 
-          "time": "16:30 - 17:30", 
-          "text": { "zh": "返回 Aria 飯店稍作休息與梳洗", "en": "Return to ARIA to rest and freshen up" }, 
-          "type": "rest",
-          "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=ARIA+Resort+%26+Casino+Las+Vegas"
+          "detail": { "zh": "利用午後避開烈日的時段，回飯店享用奢華泳池、熱水按摩池放鬆，並換上舒適服裝準備迎接晚上的奇幻大秀。", "en": "Escape the afternoon desert heat at ARIA's luxury pool complex. Relax and freshen up before heading to the evening show." }
         }
       ],
       "evening": [
         { 
-          "time": "18:00 - 19:30", 
-          "text": { "zh": "前往美高梅大酒店 (MGM Grand) 觀賞太陽馬戲團 KÀ 秀", "en": "Watch Cirque du Soleil's KÀ at MGM Grand" }, 
+          "time": "17:45 - 20:00", 
+          "text": { "zh": "前往永利飯店 (Wynn Las Vegas) 觀賞 Awakening 奇幻巨秀", "en": "Watch Awakening at Wynn Las Vegas" }, 
           "type": "show", 
-          "detail": { "zh": "太陽馬戲團最震撼的科技大秀，擁有 360 度旋轉懸空巨大舞台，融合武術與高空特技 [3, 4]。六點場時間非常合適，看完秀後可以悠閒散步或享用輕食。", "en": "Cirque du Soleil's most technologically advanced show, featuring a massive 360-degree rotating stage, martial arts, and acrobatics [3, 4]. The 6:00 PM show leaves the rest of the evening free." },
-          "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=KA+Theatre+MGM+Grand+Las+Vegas"
+          "detail": { "zh": "永利飯店耗資鉅額打造的頂級沉浸式奇幻秀，由金獎影帝安東尼霍普金斯旁白引導。在 360 度客製化玻璃舞台上，結合極致光影、巨型偶戲、高空特技與震撼音效！", "en": "An extraordinary immersive production hosted in a custom-built 360-degree theater with a glass stage at Wynn Las Vegas. Narrated by Anthony Hopkins, featuring mind-bending illusions, acrobatics, and puppetry!" },
+          "googleMapsLink": "https://maps.app.goo.gl/gPHpywJAU1NJKuCTA"
         }
       ]
     },
@@ -343,8 +336,8 @@ const itineraryData = [
       "en": "July 8 (Wed) | Belly of the Dragon / Lake Powell"
     },
     "drivingRoute": {
-      "zh": "SpringHill Suites ➔ 龍之腹 (Belly of the Dragon) ➔ 肯鎮 (Kanab) ➔ 佩吉 Hyatt Place ➔ 鮑威爾湖 ➔ Maverik 加油站",
-      "en": "SpringHill Suites ➔ Belly of the Dragon ➔ Kanab ➔ Hyatt Place Page ➔ Lake Powell ➔ Maverik Gas Station"
+      "zh": "SpringHill Suites ➔ 龍之腹 (Belly of the Dragon) ➔ 肯鎮 (Kanab) ➔ 佩吉 Hyatt Place ➔ 羚羊角碼頭 (Antelope Point Marina) ➔ Maverik 加油站",
+      "en": "SpringHill Suites ➔ Belly of the Dragon ➔ Kanab ➔ Hyatt Place Page ➔ Antelope Point Marina ➔ Maverik Gas Station"
     },
     "drivingStats": {
       "zh": "車程約 2.5 小時 (約 137 英哩 / 跨州獲得 1 小時時差紅利)",
@@ -356,7 +349,7 @@ const itineraryData = [
       "summary": { "zh": "晴朗無雲 ☀️ (湖畔晚風涼爽)", "en": "Sunny & Clear ☀️ (Pleasant Lake Breeze)" },
       "temp": { "zh": "高 98°F (37°C) / 低 73°F (23°C)", "en": "High 98°F (37°C) / Low 73°F (23°C)" }
     },
-    "googleMapsLink": "https://www.google.com/maps/dir/SpringHill+Suites+by+Marriott+Springdale+Zion+National+Park/Belly+of+the+Dragon,+Kanab,+UT/Kanab,+UT/Hyatt+Place+Page+Lake+Powell/Lake+Powell/Maverik+Adventure's+First+Stop,+Lake+Powell+Blvd,+Page,+AZ?dirflg=d",
+    "googleMapsLink": "https://www.google.com/maps/dir/SpringHill+Suites+by+Marriott+Springdale+Zion+National+Park/Belly+of+the+Dragon,+Kanab,+UT/Kanab,+UT/Hyatt+Place+Page+Lake+Powell/Antelope+Point+Marina+%26+RV+Park/Maverik+Adventure's+First+Stop,+Lake+Powell+Blvd,+Page,+AZ?dirflg=d",
     "googleMapsEmbedUrl": "https://maps.google.com/maps?saddr=SpringHill+Suites+by+Marriott+Springdale+Zion+National+Park&daddr=Hyatt+Place+Page+Lake+Powell&dirflg=d&output=embed",
     "itinerary": {
       "morning": [
@@ -393,30 +386,30 @@ const itineraryData = [
           "detail": { "zh": "車程約 1.5 小時。進入亞利桑那州慢一小時，抵達 Page 時為當地時間下午 14:00 [5]。", "en": "About 1.5 hours of drive. Crossing into Arizona shifts time back by 1 hour, making arrival 14:00 Page time [5]." }
         },
         { 
-          "time": "14:00 - 16:00", 
+          "time": "15:00 - 16:30", 
           "text": { "zh": "抵達佩吉並入住 Hyatt Place 飯店放鬆休息", "en": "Arrive in Page and check in at Hyatt Place to rest" }, 
           "type": "hotel", 
-          "detail": { "zh": "放妥行李，享受飯店設施（如戶外泳池、觀景露台）並稍作休息，準備前往 Lake Powell 碼頭 [5]。", "en": "Drop luggage, enjoy hotel amenities like the outdoor pool or scenic terrace, and prepare to head to the Lake Powell marina [5]." },
+          "detail": { "zh": "放妥行李，享受飯店設施（如戶外泳池、觀景露台）並稍作休息，準備前往羚羊角碼頭 (Antelope Point Marina) [5]。", "en": "Drop luggage, enjoy hotel amenities like the outdoor pool or scenic terrace, and prepare to head to Antelope Point Marina [5]." },
           "googleMapsLink": "https://www.google.com/maps/search/?api=1&query=Hyatt+Place+Page+Lake+Powell"
         }
       ],
       "evening": [
         { 
-          "time": "16:00 - 18:00", 
-          "text": { "zh": "預約 Lake Powell 包船/遊船，欣賞絕美湖畔景緻", "en": "Private boat charter on Lake Powell to enjoy beautiful lake views" }, 
+          "time": "17:00 - 18:00", 
+          "text": { "zh": "前往羚羊角碼頭 (Antelope Point Marina) 體驗 Lake Powell 遊船", "en": "Lake Powell Cruise at Antelope Point Marina" }, 
           "type": "sight", 
-          "detail": { "zh": "在鮑威爾湖包船，避開高溫氣溫舒適，欣賞湖光山色與水上峽谷絕景 [5]。", "en": "Chartering a private boat is a highlight. Enjoy the cool evening breeze and stunning canyon reflections [5]." },
-          "googleMapsLink": "https://maps.app.goo.gl/sAyoddxZdSp2frVDA"
+          "detail": { "zh": "前往位於 Lake Powell 的羚羊角碼頭搭乘遊船，傍晚涼爽氣溫宜人，在震撼的水上峽谷中欣賞湖光山色與夕陽絕景 [5]！", "en": "Experience a scenic boat tour departing from Antelope Point Marina. Enjoy pleasant evening temperatures and majestic views of water-filled canyons and sunset reflections [5]." },
+          "googleMapsLink": "https://maps.app.goo.gl/p1EtiYPLbKFY5oRC8"
         },
         {
-          "time": "18:00 - 18:30",
+          "time": "18:15 - 18:45",
           "text": { "zh": "於 Page Maverik 加油站加油補給", "en": "Gas stop and refuel at Maverik Page" },
           "type": "rest",
           "detail": { "zh": "遊船結束回程時，順道至 Maverik 加油站 (Lake Powell Blvd) 補滿油箱 [5]，預先為明日穿越大峽谷長途自駕備足燃料。", "en": "Stop at Maverik Gas Station on Lake Powell Blvd after the boat tour to fill up for tomorrow's canyon drive." },
           "googleMapsLink": "https://maps.app.goo.gl/eA5LqyNvSTDQGRGH7"
         },
         { 
-          "time": "18:30 - 20:30", 
+          "time": "18:45 - 20:30", 
           "text": { "zh": "在 Dara Sushi & Roll 享用日式晚餐", "en": "Dinner at Dara Sushi & Roll" }, 
           "type": "dining", 
           "detail": { "zh": "位於 Page 鎮上的溫馨日式餐廳。提供新鮮的生魚片、特製創意壽司捲（如 Arizona Roll、Crunchy Roll）與 Poke 碗，深受當地人喜愛 [5]。", "en": "A cozy local Japanese spot in Page. Enjoy fresh sashimi, specialty sushi rolls (like Arizona Roll and Crunchy Roll), and poke bowls [5]." },
@@ -601,36 +594,48 @@ const itineraryData = [
 // ==========================================================================
 // 2. Booking Tracker Configuration
 // ==========================================================================
+const bookingGroups = {
+  vegas: {
+    title: { "zh": "7/5 - 7/7 拉斯維加斯", "en": "July 5-7 | Las Vegas" },
+    icon: "fa-dice"
+  },
+  zion: {
+    title: { "zh": "7/7 錫安國家公園", "en": "July 7 | Zion National Park" },
+    icon: "fa-mountain"
+  },
+  page: {
+    title: { "zh": "7/8 佩吉與鮑威爾湖", "en": "July 8 | Page & Lake Powell" },
+    icon: "fa-water"
+  },
+  kingman: {
+    title: { "zh": "7/9 66號公路與金曼", "en": "July 9 | Route 66 & Kingman" },
+    icon: "fa-road"
+  },
+  general: {
+    title: { "zh": "行前與景點通行證", "en": "General & Passes" },
+    icon: "fa-ticket"
+  }
+};
+
 const bookingItems = [
-  { id: 'costco_supplies', label: { "zh": "Costco 行前採購 (保冰桶、飲料、冰塊)", "en": "Costco Supplies (cooler, drinks, ice)" }, estimate: 120 },
-  { id: 'las_vegas_hotel', label: { "zh": "Las Vegas 酒店預訂 (Aria 2晚 / 雙人房x2)", "en": "Las Vegas Hotel Booking (Aria 2 nights / 2 rooms)" }, estimate: 900 },
-  { id: 'jasmine_restaurant', label: { "zh": "Bellagio Jasmine 餐廳預約 (5人)", "en": "Bellagio Jasmine Restaurant Reservation (5 people)" }, estimate: 400 },
-  { id: 'bacchanal_buffet', label: { "zh": "Caesars Bacchanal Buffet 預約 (5人)", "en": "Caesars Bacchanal Buffet Reservation (5 people)" }, estimate: 500 },
-  { id: 'ka_tickets', label: { "zh": "太陽馬戲團 KÀ 門票預訂 (5人)", "en": "Cirque du Soleil KÀ Tickets (5 tickets)" }, estimate: 500 },
-  { id: 'zion_ebike', label: { "zh": "Zion 鋪路自行車租借預約 (5台 E-Bike)", "en": "Zion National Park E-Bike Rentals (5 bikes)" }, estimate: 400 },
-  { id: 'springdale_hotel', label: { "zh": "Springdale 溫泉酒店預訂 (1晚 / 雙人房x2)", "en": "Springdale Hotel Booking (1 night / 2 rooms)" }, estimate: 450 },
-  { id: 'antelope_canyon_tour', label: { "zh": "Page 羚羊峽谷導覽門票預訂 (5人)", "en": "Page Antelope Canyon Tour Booking (5 people)" }, estimate: 450 },
-  { id: 'lake_powell_boat', label: { "zh": "Page 鮑威爾湖包船/遊船預訂 (5人)", "en": "Page Lake Powell Boat Charter Booking (5 people)" }, estimate: 450 },
-  { id: 'page_hotel', label: { "zh": "Page 酒店預訂 (1晚 / 雙人房x2)", "en": "Page Hotel Booking (1 night / 2 rooms)" }, estimate: 360 },
-  { id: 'national_park_pass', label: { "zh": "美西國家公園年票實體卡 (1張即可)", "en": "National Parks Annual Pass (1 physical card)" }, estimate: 80 },
-  { id: 'route66_hotel', label: { "zh": "Kingman 飯店預訂 (SpringHill Suites 1晚 / 雙人房x2)", "en": "Kingman Hotel Booking (SpringHill Suites 1 night / 2 rooms)" }, estimate: 300 }
+  { id: 'las_vegas_hotel', group: 'vegas', label: { "zh": "Las Vegas 酒店預訂 (Aria 2晚 / 雙人房x2)", "en": "Las Vegas Hotel Booking (Aria 2 nights / 2 rooms)" }, estimate: 900 },
+  { id: 'jasmine_restaurant', group: 'vegas', label: { "zh": "Bellagio Jasmine 餐廳預約 (5人)", "en": "Bellagio Jasmine Restaurant Reservation (5 people)" }, estimate: 400 },
+  { id: 'bellagio_buffet', group: 'vegas', label: { "zh": "Bellagio 豪華自助餐預約 (5人)", "en": "The Buffet at Bellagio Reservation (5 people)" }, estimate: 450 },
+  { id: 'play_playground_tickets', group: 'vegas', label: { "zh": "Play Playground 遊戲館門票 (5人)", "en": "Play Playground Admission Tickets (5 tickets)" }, estimate: 200 },
+  { id: 'awakening_tickets', group: 'vegas', label: { "zh": "永利飯店 Awakening 秀門票預訂 (5人)", "en": "Wynn Awakening Show Tickets (5 tickets)" }, estimate: 600 },
+  { id: 'zion_ebike', group: 'zion', label: { "zh": "Zion 鋪路自行車租借預約 (5台 E-Bike)", "en": "Zion National Park E-Bike Rentals (5 bikes)" }, estimate: 400 },
+  { id: 'springdale_hotel', group: 'zion', label: { "zh": "Springdale 溫泉酒店預訂 (1晚 / 雙人房x2)", "en": "Springdale Hotel Booking (1 night / 2 rooms)" }, estimate: 450 },
+  { id: 'antelope_canyon_tour', group: 'page', label: { "zh": "Page 羚羊峽谷導覽門票預訂 (5人)", "en": "Page Antelope Canyon Tour Booking (5 people)" }, estimate: 450 },
+  { id: 'lake_powell_boat', group: 'page', label: { "zh": "羚羊角碼頭 Lake Powell 遊船預訂 (5人)", "en": "Antelope Point Marina Lake Powell Cruise Booking (5 people)" }, estimate: 450 },
+  { id: 'page_hotel', group: 'page', label: { "zh": "Page 酒店預訂 (1晚 / 雙人房x2)", "en": "Page Hotel Booking (1 night / 2 rooms)" }, estimate: 360 },
+  { id: 'route66_hotel', group: 'kingman', label: { "zh": "Kingman 飯店預訂 (SpringHill Suites 1晚 / 雙人房x2)", "en": "Kingman Hotel Booking (SpringHill Suites 1 night / 2 rooms)" }, estimate: 300 },
+  { id: 'national_park_pass', group: 'general', label: { "zh": "美西國家公園年票實體卡 (1張即可)", "en": "National Parks Annual Pass (1 physical card)" }, estimate: 80 }
 ];
 
 // ==========================================================================
 // 3. Packing Checklist Configuration
 // ==========================================================================
 const packingData = {
-  hiking: {
-    title: { "zh": "涉水與徒步健行", "en": "Wading & Hiking" },
-    icon: "fa-person-hiking",
-    items: [
-      { "zh": "涉水水鞋 / 溯溪鞋", "en": "Wading boots / Water shoes" },
-      { "zh": "氯丁橡膠防沙襪 (Neo Socks)", "en": "Neoprene sand-proof socks" },
-      { "zh": "登山杖 / 溪流防滑木棍", "en": "Hiking poles / Wading stick" },
-      { "zh": "大容量雙肩水袋包 (Hydration Pack)", "en": "Large hydration pack / Backpack" },
-      { "zh": "手機雙重防水袋", "en": "Waterproof phone pouch" }
-    ]
-  },
   sunProtection: {
     title: { "zh": "防曬與氣候防護", "en": "Sun & Weather Protection" },
     icon: "fa-sun",
@@ -916,7 +921,20 @@ function renderBookingChecklist() {
   if (!container) return;
   container.innerHTML = '';
 
+  let currentGroup = null;
+
   bookingItems.forEach(item => {
+    if (item.group !== currentGroup) {
+      currentGroup = item.group;
+      const groupData = bookingGroups[currentGroup];
+      if (groupData) {
+        const headerLi = document.createElement('li');
+        headerLi.className = 'tracker-group-header';
+        headerLi.innerHTML = `<i class="fa-solid ${groupData.icon}"></i> <span>${groupData.title[currentLang]}</span>`;
+        container.appendChild(headerLi);
+      }
+    }
+
     const li = document.createElement('li');
     li.className = 'tracker-item';
 
