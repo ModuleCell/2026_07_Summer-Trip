@@ -142,10 +142,10 @@ const itineraryData = [
       "evening": [
         { 
           "time": "18:00 - 20:00", 
-          "text": { "zh": "在 ARIA 渡假村內的鼎泰豐享用晚餐", "en": "Dinner at Din Tai Fung (ARIA Resort & Casino)" }, 
+          "text": { "zh": "在百樂宮 (Bellagio) 內的 Jasmine 餐廳享用晚餐", "en": "Dinner at Jasmine (Bellagio Hotel & Casino)" }, 
           "type": "dining", 
-          "detail": { "zh": "位於 ARIA 渡假村內。享用著名的黃金十八摺小籠包、紅油抄手與排骨蛋炒飯。建議提早透過官網預約 [1, 2]。", "en": "Located inside ARIA Resort. Enjoy their world-famous Xiao Long Bao, spicy wontons, and pork chop fried rice. Booking in advance is recommended [1, 2]." },
-          "googleMapsLink": "https://maps.app.goo.gl/sngKADDJD3MbF7ts8"
+          "detail": { "zh": "位於百樂宮 (Bellagio) 內。一邊享用精緻粵菜與港式海鮮，一邊近距離透過落地窗欣賞湖畔音樂噴泉水舞秀，氣氛極佳。", "en": "Located inside Bellagio. Enjoy refined Cantonese cuisine and seafood while taking in premier fountain views through floor-to-ceiling windows." },
+          "googleMapsLink": "https://maps.app.goo.gl/hyRVDnLd8f2t4XwE8"
         },
         { 
           "time": "20:00 - 22:00", 
@@ -604,6 +604,7 @@ const itineraryData = [
 const bookingItems = [
   { id: 'costco_supplies', label: { "zh": "Costco 行前採購 (保冰桶、飲料、冰塊)", "en": "Costco Supplies (cooler, drinks, ice)" }, estimate: 120 },
   { id: 'las_vegas_hotel', label: { "zh": "Las Vegas 酒店預訂 (Aria 2晚 / 雙人房x2)", "en": "Las Vegas Hotel Booking (Aria 2 nights / 2 rooms)" }, estimate: 900 },
+  { id: 'jasmine_restaurant', label: { "zh": "Bellagio Jasmine 餐廳預約 (5人)", "en": "Bellagio Jasmine Restaurant Reservation (5 people)" }, estimate: 400 },
   { id: 'bacchanal_buffet', label: { "zh": "Caesars Bacchanal Buffet 預約 (5人)", "en": "Caesars Bacchanal Buffet Reservation (5 people)" }, estimate: 500 },
   { id: 'ka_tickets', label: { "zh": "太陽馬戲團 KÀ 門票預訂 (5人)", "en": "Cirque du Soleil KÀ Tickets (5 tickets)" }, estimate: 500 },
   { id: 'zion_ebike', label: { "zh": "Zion 鋪路自行車租借預約 (5台 E-Bike)", "en": "Zion National Park E-Bike Rentals (5 bikes)" }, estimate: 400 },
